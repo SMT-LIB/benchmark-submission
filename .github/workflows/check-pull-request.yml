@@ -4,7 +4,7 @@ jobs:
   basic-checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 2
       - name: Check if pull request removes benchmarks
@@ -22,6 +22,7 @@ jobs:
           fi
       - name: Check if folder structure and filenames are correct
         run: |
+          set +e
           valid_filenames="^(incremental|non-incremental)\/[A-Z_]+\/20[012][0-9][01][0-9][0123][0-9]-.+\/.+\.smt2$"
           status=0
           for added_file in `git diff --diff-filter=ACR --name-only HEAD^1 HEAD`; do
@@ -38,7 +39,7 @@ jobs:
     needs: basic-checks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 2
       - name: Cache Dolmen
@@ -55,12 +56,53 @@ jobs:
           chmod +x ./dolmen-linux-amd64
       - name: Check files
         run: |
+          set +e
           status=0
           for added_file in `git diff --diff-filter=ACRM --name-only HEAD^1 HEAD`; do
             VERSION=$(grep -oP "^\(set-info :smt-lib-version \K.*(?=\))" "${added_file}")
             ./dolmen-linux-amd64 -i smt2 --strict=false --check-headers=true --input=smt${VERSION} ${added_file}
-            if [ $? -ne 0 ] ;  then
-              echo "Dolmen reported problems with ${added_file}."
+            if [[ $? -ne 0 ]] ;  then
+              echo "::error::Dolmen reported problems with ${added_file}."
+              status=1
+            fi
+          done
+          exit $status
+  check-with-klhm:
+    needs: basic-checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+      - name: Cache Klammerhammer
+        id: klhm-cache
+        uses: actions/cache@v4
+        with:
+          key: klhm
+          path: ./SMT-LIB-db/klhm/zig-out/bin/klhm
+      - name: Checkout Klammerhammer
+        if: steps.cache-packages.outputs.cache-hit != 'true'
+        id: klhm-checkout
+        uses: actions/checkout@v6
+        with:
+          repository: SMT-LIB/SMT-LIB-db
+          path: SMT-LIB-db
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.15.2
+      - name: Build Klammerhammer
+        if: steps.cache-packages.outputs.cache-hit != 'true'
+        run: |
+          cd SMT-LIB-db/klhm
+          zig build -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
+      - name: Check files
+        run: |
+          set +e
+          status=0
+          for added_file in `git diff --diff-filter=ACRM --name-only HEAD^1 HEAD`; do
+            ./SMT-LIB-db/klhm/zig-out/bin/klhm ${added_file} > /dev/null
+            if [[ $? -ne 0 ]] ;  then
+              echo "::error::Klammerhammer reported problems with ${added_file}."
               status=1
             fi
           done
