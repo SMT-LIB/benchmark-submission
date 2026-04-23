@@ -60,7 +60,7 @@ jobs:
           status=0
           for added_file in `git diff --diff-filter=ACRM --name-only HEAD^1 HEAD`; do
             VERSION=$(grep -oP "^\(set-info :smt-lib-version \K.*(?=\))" "${added_file}")
-            ./dolmen-linux-amd64 -i smt2 --strict=false --check-headers=true --input=smt${VERSION} ${added_file}
+            ./dolmen-linux-amd64 --strict=false --check-headers=true --input=smt${VERSION} ${added_file}
             if [[ $? -ne 0 ]] ;  then
               echo "::error::Dolmen reported problems with ${added_file}."
               status=1
