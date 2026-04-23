@@ -79,14 +79,14 @@ jobs:
         uses: actions/cache@v5
         with:
           key: klhm
-          path: SMT-LIB-db
+          path: ./SMT-LIB-db/klhm/zig-out/bin/klhm
       - name: Checkout Klammerhammer
         if: steps.cache-packages.outputs.cache-hit != 'true'
         id: klhm-checkout
         uses: actions/checkout@v6
         with:
           repository: SMT-LIB/SMT-LIB-db
-          path: ./SMT-LIB-db/klhm/zig-out/bin
+          path: SMT-LIB-db
       - uses: mlugg/setup-zig@v2
         with:
           version: 0.15.2
