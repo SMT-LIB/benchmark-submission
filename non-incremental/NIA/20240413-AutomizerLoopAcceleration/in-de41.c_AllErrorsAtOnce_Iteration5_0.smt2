@@ -32,7 +32,6 @@ unsatisfiable cores, and interpolants.
 (set-info :license "https://creativecommons.org/licenses/by/4.0/")
 (set-info :category "industrial")
 (set-info :status unknown)
-(echo "test")
 (declare-fun |ULTIMATE.start_main_~x~0#1_-1| () Int)
 (declare-fun |ULTIMATE.start_main_~y~0#1_-1| () Int)
 (declare-fun |ULTIMATE.start_main_~x~0#1_0| () Int)
