@@ -93,6 +93,7 @@ jobs:
       - name: Build Klammerhammer
         run: |
           cd SMT-LIB-db/klhm
+          ls -lah
           if [ "[${{steps.klhm-cache.outputs.cache-hit}}]" = "[]" ]; then
             zig build -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
           fi
