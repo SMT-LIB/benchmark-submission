@@ -86,15 +86,17 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: SMT-LIB/SMT-LIB-db
-          path: SMT-LIB-db
+          path: ./SMT-LIB-db/klhm/zig-out/bin/klhm
       - uses: mlugg/setup-zig@v2
         with:
           version: 0.15.2
       - name: Build Klammerhammer
-        if: steps.klhm-cache.outputs.cache-hit != 'true'
         run: |
           cd SMT-LIB-db/klhm
-          zig build -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
+          if [ "[${{steps.klhm-cache.outputs.cache-hit}}]" = "[]" ]; then
+            zig build -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
+          fi
+          chmod +x ./zig-out/bin/klhm
       - name: Check files
         run: |
           set +e
