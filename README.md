@@ -1,9 +1,9 @@
-# SMT-LIB Benchmark Submission – 2025
+# SMT-LIB Benchmark Submission – 2026
 
 This repository serves as a staging repository for benchmarks submitted
 for inclusion in the [SMT-LIB](https://smt-lib.org/) library.  Benchmarks
-submitted to this repository before **April 12** will be included in
-the 2025 release.
+submitted to this repository before **June 25** will be included in
+the 2026 release.
 
 > [!NOTE]
 > We accept benchmarks using the new SMT-LIB 2.7 features.  Use the
