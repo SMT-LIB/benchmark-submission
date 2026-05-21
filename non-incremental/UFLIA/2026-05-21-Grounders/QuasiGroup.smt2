@@ -2579,3 +2579,4 @@ From the DIRT benchmark used to evaluate grounders
                 (not (not (assigned V))))))
 
 (check-sat)
+(exit)

@@ -2036,3 +2036,4 @@ From the DIRT benchmark used to evaluate grounders
                     (= (color x) red))))
 
 (check-sat)
+(exit)

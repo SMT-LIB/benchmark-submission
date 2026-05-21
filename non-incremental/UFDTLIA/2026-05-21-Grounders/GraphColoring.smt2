@@ -62524,3 +62524,4 @@ From the DIRT benchmark used to evaluate grounders
     )
 )
 (check-sat)
+(exit)

@@ -200021,3 +200021,4 @@ From the DIRT benchmark used to evaluate grounders
 (assert (exists ((x Int)) (and (p x) (q x))))
 
 (check-sat)
+(exit)
