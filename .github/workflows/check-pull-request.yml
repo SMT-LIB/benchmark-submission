@@ -95,7 +95,7 @@ jobs:
         if: steps.klhm-cache.outputs.cache-hit != 'true'
         run: |
           cd SMT-LIB-db/klhm
-          zig build -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
+          zig build -Dcpu=baseline -Doptimize=ReleaseFast -Dno-compression -Dbenchmark-commands
       - name: Check files
         run: |
           set +e
