@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (declare-sort P 1)
 (define-sort |BOOL| () Bool)
 (declare-sort |s68| 0)

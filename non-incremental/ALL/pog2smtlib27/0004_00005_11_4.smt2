@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (define-sort |Z| () Int)
 (define-sort |REAL| () Real)
 (declare-datatype C (par (T1 T2) ((maplet (fst T1) (snd T2)))))

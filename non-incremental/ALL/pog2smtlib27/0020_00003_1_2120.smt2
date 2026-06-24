@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (define-sort |Z| () Int)
 (declare-sort P 1)
 (declare-datatype |s0| ((s1)(s2)(s3)(s4)(s5)(s6)(s7)(s8)))

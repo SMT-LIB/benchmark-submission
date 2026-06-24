@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unsat)
 
-(set-option :print-success false)
 ; Prelude
 (declare-sort P 1)
 (declare-fun mem0 (Int (P Int)) Bool)

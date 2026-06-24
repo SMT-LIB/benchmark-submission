@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (declare-datatype |s331| ((s332)(s333)(s334)(s335)(s336)(s337)(s338)(s339)))
 (declare-sort P 1)
 (define-sort |POW s331| () (P |s331|))

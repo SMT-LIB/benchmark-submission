@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unsat)
 
-(set-option :print-success false)
 (declare-datatype C (par (T1 T2) ((maplet (fst T1) (snd T2)))))
 (declare-datatype |s14| ((s15)(s16)))
 (declare-datatype |s17| ((s18)(s19)(s20)(s21)(s22)(s23)))

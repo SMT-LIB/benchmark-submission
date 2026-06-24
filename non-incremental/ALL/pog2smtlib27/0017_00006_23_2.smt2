@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (declare-sort |s66| 0)
 (declare-datatype C (par (T1 T2) ((maplet (fst T1) (snd T2)))))
 (declare-datatype |s6| ((s25)(s26)(s27)(s28)(s29)(s30)(s31)(s32)(s33)(s34)(s35)(s36)(s37)(s38)(s39)(s40)(s41)(s42)(s43)(s44)(s45)(s46)(s47)(s48)(s49)(s50)(s51)(s8)(s52)(s53)(s54)(s55)(s56)(s57)(s58)(s59)))

@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unknown)
 
-(set-option :print-success false)
 (declare-datatype |s17| ((s18)(s19)(s20)(s21)(s22)(s23)))
 (declare-sort P 1)
 (declare-datatype |s14| ((s15)(s16)))

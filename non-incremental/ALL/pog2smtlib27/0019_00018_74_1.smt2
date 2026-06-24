@@ -11,7 +11,6 @@ Time limit: 1200.0
 (set-info :category "industrial")
 (set-info :status unsat)
 
-(set-option :print-success false)
 (declare-sort P 1)
 (declare-datatype |s61| ((s62)(s63)))
 (declare-sort |s11| 0)
