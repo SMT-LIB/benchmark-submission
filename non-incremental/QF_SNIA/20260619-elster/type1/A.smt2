@@ -1,4 +1,3 @@
-(set-option :produce-models true)
 (set-info :smt-lib-version 2.6)
 (set-logic QF_SNIA)
 (set-info :source  | 
@@ -537,6 +536,5 @@ number variables: 270, number constraints: 252
 (assert (not (and B139-F (not B125-F) (not B124-F) (not B126-F) (not B122-F) (not B123-F) (not B127-F) (not B128-F) (not B129-F) (not B130-F) (not B131-F) (not B138-F) (not B132-F) (not B135-F) (not B136-F) (not B133-F) (not B134-F) (not B137-F))))
 (assert (not (and B139-F B113-F (distinct I140 (* I113 100)))))
 (check-sat)
-(get-model)
 (exit)
 

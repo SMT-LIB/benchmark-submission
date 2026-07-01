@@ -1,4 +1,3 @@
-(set-option :produce-models true)
 (set-info :smt-lib-version 2.6)
 (set-logic QF_SNIA)
 (set-info :source  | 
@@ -13205,6 +13204,5 @@ number variables: 6219, number constraints: 7261
 (assert (not (and (= S4207-S "S") (not B4199-F))))
 (assert (not (distinct (str.to_int (str.substr S4201-S 0 4)) 2025)))
 (check-sat)
-(get-model)
 (exit)
 

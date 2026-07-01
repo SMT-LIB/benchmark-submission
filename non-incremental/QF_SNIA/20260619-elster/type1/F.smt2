@@ -1,4 +1,3 @@
-(set-option :produce-models true)
 (set-info :smt-lib-version 2.6)
 (set-logic QF_SNIA)
 (set-info :source  | 
@@ -2643,6 +2642,5 @@ number variables: 1473, number constraints: 1422
 (assert (not (and B1116-F B1113-F (or (< I1116-y I1113-y) (and (= I1116-y I1113-y) (< I1116-m I1113-m)) (and (= I1116-y I1113-y) (= I1116-m I1113-m) (< I1116-d I1113-d))))))
 (assert (not (and B1193-F B1190-F (or (< I1193-y I1190-y) (and (= I1193-y I1190-y) (< I1193-m I1190-m)) (and (= I1193-y I1190-y) (= I1193-m I1190-m) (< I1193-d I1190-d))))))
 (check-sat)
-(get-model)
 (exit)
 
