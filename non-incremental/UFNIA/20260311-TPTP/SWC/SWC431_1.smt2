@@ -45,3 +45,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int)) (let ((_let_1 (+ 2 X))) (= (tptp.fast X) (|tptp.'div:(Int*Int)>Int'| (* (+ 1 (* (+ 2 (+ (+ X X) X)) _let_1)) (* _let_1 X)) (* 2 (* 2 (+ 2 (+ 2 2)))))))))
 (assert (not (not (exists ((C Int)) (and (>= C 0) (not (= (tptp.small C) (tptp.fast C))))))))
 (check-sat)
+(exit)

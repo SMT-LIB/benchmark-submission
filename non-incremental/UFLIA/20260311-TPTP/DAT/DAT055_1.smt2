@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.max (tptp.list) Int)
 (assert (not (=> (and (forall ((X tptp.list)) (<= (tptp.min X) (tptp.max X))) (<= tptp.l (tptp.min tptp.a)) (< 0 tptp.k)) (< tptp.l (+ (tptp.max tptp.a) tptp.k)))))
 (check-sat)
+(exit)

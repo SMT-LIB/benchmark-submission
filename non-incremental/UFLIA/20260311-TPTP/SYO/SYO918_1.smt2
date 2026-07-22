@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int) Int)
 (assert (forall ((X Int)) (exists ((Y Int)) (> (tptp.f Y) X))))
 (check-sat)
+(exit)

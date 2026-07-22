@@ -1038,3 +1038,4 @@ v9.2.1 realease of TPTP.
 (assert (not (forall ((X_2339 Int)) (=> (forall ((X_2340 Int)) (=> (tptp.mem3 tptp.g_s512_486 tptp.g_s513_487 X_2340 tptp.g_s248_246) (tptp.mem2 X_2340 X_2339 tptp.g_s184_182))) (tptp.mem2 tptp.g_s504_485 X_2339 tptp.g_s490_477)))))
 (assert (not (and (forall ((X_2352 Int) (X_2353 Int)) (=> (and (tptp.mem2 X_2353 X_2352 tptp.g_s488_475) (not (= X_2353 tptp.g_s500_484))) (and (tptp.mem0 X_2353 tptp.g_s173_171) (tptp.mem0 X_2352 tptp.g_s192_190)))) (forall ((X_2354 Int) (X_2355 Int) (X_2356 Int)) (let ((_let_1 (not (= X_2354 tptp.g_s500_484)))) (=> (and (tptp.mem2 X_2354 X_2355 tptp.g_s488_475) _let_1 (tptp.mem2 X_2354 X_2356 tptp.g_s488_475) _let_1) (= X_2355 X_2356)))))))
 (check-sat)
+(exit)

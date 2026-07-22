@@ -60,3 +60,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X_g tptp.general)) (=> (exists ((Y_g tptp.general)) (tptp.s X_g Y_g)) (exists ((Y_g tptp.general)) (and (tptp.s X_g Y_g) (tptp.in_cover Y_g))))))
 (assert (not (forall ((Y_g tptp.general) (Z_g tptp.general)) (=> (and (exists ((X_g tptp.general)) (and (tptp.s X_g Y_g) (tptp.s X_g Z_g))) (tptp.in_cover Y_g) (tptp.in_cover Z_g)) (= Y_g Z_g)))))
 (check-sat)
+(exit)

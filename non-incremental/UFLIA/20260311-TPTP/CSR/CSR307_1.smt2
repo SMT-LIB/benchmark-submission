@@ -73,3 +73,4 @@ v9.2.1 realease of TPTP.
 (assert (not (tptp.releasedAt tptp.spilling (tptp.at_time 0))))
 (assert (not (forall ((X1 Int)) (=> (tptp.releasedAt tptp.spilling (tptp.at_time (+ 1 X1))) (tptp.releasedAt tptp.spilling (tptp.at_time X1))))))
 (check-sat)
+(exit)

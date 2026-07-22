@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int)) (not (= (tptp.f X) (tptp.f (- X 1))))))
 (assert (forall ((X Int)) (not (= (tptp.f X) tptp.a))))
 (check-sat)
+(exit)

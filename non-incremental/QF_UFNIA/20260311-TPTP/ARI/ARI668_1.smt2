@@ -25,3 +25,4 @@ v9.2.1 realease of TPTP.
 (assert (<= tptp.a tptp.c))
 (assert (let ((_let_1 (* tptp.a tptp.c))) (not (or (<= 4 _let_1) (>= 0 _let_1)))))
 (check-sat)
+(exit)

@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (> (tptp.f (+ tptp.c tptp.d)) 2.0))
 (assert (not (> (tptp.f (+ tptp.a (+ tptp.b (+ tptp.c tptp.d)))) 4.0)))
 (check-sat)
+(exit)

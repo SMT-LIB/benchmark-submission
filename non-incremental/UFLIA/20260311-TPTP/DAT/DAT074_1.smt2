@@ -38,3 +38,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.array) (B tptp.array) (N Int)) (=> (forall ((I Int)) (let ((_let_1 (tptp.read B I))) (or (and (>= I 0) (> N I) (= _let_1 (tptp.read A (- N (+ I 1))))) (and (or (> 0 I) (>= I N)) (= _let_1 (tptp.read A I)))))) (= (tptp.rev A N) B))))
 (assert (not (not (forall ((N Int) (I Int)) (tptp.distinct (tptp.init N) I)))))
 (check-sat)
+(exit)

@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int) Int)
 (assert (not (=> (forall ((U Int)) (> (tptp.f U) U)) (forall ((V Int) (W Int)) (>= (tptp.f (+ (tptp.f V) W)) (+ (+ V W) 2))))))
 (check-sat)
+(exit)

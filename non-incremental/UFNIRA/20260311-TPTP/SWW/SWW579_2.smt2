@@ -56,3 +56,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Real) (Y Real)) (let ((_let_1 (tptp.min X Y))) (or (= _let_1 X) (= _let_1 Y)))))
 (assert (not (forall ((R Real) (Eps Real) (N Int) (Eps0 Real)) (let ((_let_1 (tptp.max R 1.0))) (let ((_let_2 (/ _let_1 Eps0))) (let ((_let_3 (to_real N))) (let ((_let_4 (* _let_3 Eps0))) (let ((_let_5 (/ 1.0 Eps0))) (=> (and (<= 0.0 R) (< 0.0 Eps0) (<= 1 N) (= Eps _let_4)) (=> (not (and (< R Eps) (< 1.0 Eps))) (=> (<= _let_4 _let_1) (=> (< 0.0 _let_5) (=> (<= (* _let_4 _let_5) (* _let_1 _let_5)) (=> (<= (/ _let_4 Eps0) _let_2) (<= _let_3 _let_2)))))))))))))))
 (check-sat)
+(exit)

@@ -87,3 +87,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.array_int) (X Int) (Y Int) (L Int)) (= (tptp.is_longest_common_prefix1 A X Y L) (and (tptp.is_common_prefix1 A X Y L) (forall ((M Int)) (=> (< L M) (not (tptp.is_common_prefix1 A X Y M))))))))
 (assert (not (forall ((A tptp.array_int) (X Int) (Y Int) (L Int)) (=> (and (tptp.is_common_prefix1 A X Y L) (not (tptp.is_common_prefix1 A X Y (+ L 1)))) (tptp.is_longest_common_prefix1 A X Y L)))))
 (check-sat)
+(exit)

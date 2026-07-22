@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Int) (Y Int)) (= (and (<= 7 (+ X Y)) (<= (+ X 5) (* 2 Y)) (<= Y 4)) (and (= X 3) (= Y 4))))))
 (check-sat)
+(exit)

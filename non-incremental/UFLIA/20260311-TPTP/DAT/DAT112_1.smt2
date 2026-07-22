@@ -42,3 +42,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((H tptp.heap)) (not (tptp.lsls H tptp.empty))))
 (assert (forall ((N Int) (H0 tptp.heap) (H tptp.heap)) (= (tptp.lsls H0 (tptp.app H N)) (or (= H0 H) (tptp.lsls H0 H)))))
 (check-sat)
+(exit)

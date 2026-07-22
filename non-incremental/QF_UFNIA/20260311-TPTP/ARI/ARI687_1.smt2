@@ -25,3 +25,4 @@ v9.2.1 realease of TPTP.
 (assert (= (- (+ (+ (+ (+ (* (* (* 3 tptp.x) tptp.x) tptp.y) (* (* 2 tptp.x) tptp.y)) tptp.y) (* (* 9 tptp.x) tptp.x)) (* 5 tptp.x)) 3) 0))
 (assert (let ((_let_1 (* tptp.x tptp.x))) (not (= (+ (* 2 (* _let_1 tptp.x)) (* (- 1) (+ (* 5 tptp.x) (* 5 _let_1)))) 0))))
 (check-sat)
+(exit)

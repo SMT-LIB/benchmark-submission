@@ -365,3 +365,4 @@ v9.2.1 realease of TPTP.
 (assert (exists ((A__questionmark_v_0_336 tptp.c_type)) (and (= A__questionmark_v_0_336 (tptp.tag_id tptp.void_P)) (tptp.parenttag (tptp.c_sort A__questionmark_v_0_336 tptp.void_P_tag) (tptp.c_sort A__questionmark_v_0_336 tptp.bottom_tag)))))
 (assert (forall ((A__questionmark_xu573_587 tptp.c_unsorted) (A__questionmark_voiduPutagutableu572_588 tptp.c_unsorted)) (tptp.instanceof (tptp.c_sort (tptp.tag_table tptp.void_P) A__questionmark_voiduPutagutableu572_588) (tptp.c_sort (tptp.pointer tptp.void_P) A__questionmark_xu573_587) (tptp.c_sort (tptp.tag_id tptp.void_P) tptp.void_P_tag))))
 (check-sat)
+(exit)

@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real)) (=> (is_int X) (or (> X (/ 19 5)) (< X (/ 16 5)))))))
 (check-sat)
+(exit)

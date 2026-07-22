@@ -62,3 +62,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((I_i Int) (N_i Int)) (let ((_let_1 (+ N_i 1))) (let ((_let_2 (+ I_i 1))) (=> (and (tptp.sqrt (tptp.f__integer__ I_i) (tptp.f__integer__ N_i)) (<= (* _let_2 _let_2) _let_1)) (tptp.sqrt (tptp.f__integer__ _let_2) (tptp.f__integer__ _let_1)))))))
 (assert (not (exists ((I_i Int)) (tptp.sqrt (tptp.f__integer__ I_i) (tptp.f__integer__ 0)))))
 (check-sat)
+(exit)

@@ -70,3 +70,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((T2 tptp.t1) (T1 tptp.t1)) (= (tptp.rel1 T2 T1) (exists ((I Int)) (let ((_let_1 (* 2 I))) (let ((_let_2 (+ I 1))) (and (= T1 (tptp.iter1 I tptp.x01)) (= T2 (tptp.iter1 _let_2 tptp.x01)) (<= 1 I) (<= I (+ tptp.mu1 tptp.lambda1)) (=> (<= tptp.mu1 I) (< (tptp.dist1 (+ _let_1 2) _let_2) (tptp.dist1 _let_1 I))))))))))
 (assert (not (exists ((T Int)) (let ((_let_1 (tptp.f1 tptp.x01))) (and (<= 1 T) (<= T (+ tptp.mu1 tptp.lambda1)) (= _let_1 (tptp.iter1 T tptp.x01)) (= (tptp.f1 _let_1) (tptp.iter1 (* 2 T) tptp.x01)) (forall ((I Int)) (=> (and (<= 1 I) (< I T)) (not (= (tptp.iter1 I tptp.x01) (tptp.iter1 (* 2 I) tptp.x01))))))))))
 (check-sat)
+(exit)

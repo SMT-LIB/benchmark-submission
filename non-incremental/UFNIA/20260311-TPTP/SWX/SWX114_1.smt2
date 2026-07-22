@@ -58,3 +58,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((V1_g tptp.general)) (= (tptp.more_than_three V1_g) (exists ((N_g tptp.general)) (and (= V1_g N_g) (exists ((Z_g tptp.general) (Z1_g tptp.general)) (and (= Z_g N_g) (exists ((I_i Int) (J_i Int) (K_i Int)) (and (= I_i 1) (= J_i tptp.n_i) (= Z1_g (tptp.f__integer__ K_i)) (<= I_i K_i) (<= K_i J_i))) (= Z_g Z1_g))) (exists ((Z_g tptp.general)) (and (= Z_g N_g) (not (tptp.three Z_g)))))))))
 (assert (not (forall ((V1_g tptp.general)) (= (tptp.more_than_three V1_g) (exists ((N_g tptp.general)) (and (= V1_g N_g) (exists ((Z_g tptp.general) (Z1_g tptp.general)) (and (= Z_g N_g) (exists ((I_i Int) (J_i Int) (K_i Int)) (and (= I_i 1) (= J_i tptp.n_i) (= Z1_g (tptp.f__integer__ K_i)) (<= I_i K_i) (<= K_i J_i))) (= Z_g Z1_g))) (exists ((Z_g tptp.general)) (and (= Z_g N_g) (not (tptp.three_p Z_g))))))))))
 (check-sat)
+(exit)

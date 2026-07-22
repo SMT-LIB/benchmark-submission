@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int Int) Int)
 (assert (let ((_let_1 (+ tptp.a 1))) (let ((_let_2 (- tptp.b 1))) (not (=> (and (<= tptp.a (+ tptp.b 2)) (<= tptp.b (- tptp.a 2))) (<= (tptp.f _let_1 _let_2) (+ 1 (tptp.f _let_2 _let_1))))))))
 (check-sat)
+(exit)

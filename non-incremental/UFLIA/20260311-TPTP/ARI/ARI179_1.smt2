@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((U Int) (V Int) (W Int)) (=> (and (< U 5) (< V 3) (> (+ U (* 2 V)) 7)) (= V 2)))))
 (check-sat)
+(exit)

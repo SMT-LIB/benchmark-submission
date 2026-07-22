@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.g (Int) Int)
 (assert (not (=> (and (forall ((X Int)) (let ((_let_1 (- X))) (let ((_let_2 (tptp.f X))) (and (<= X _let_2) (<= _let_1 _let_2) (or (<= _let_2 X) (<= _let_2 _let_1)))))) (forall ((X Int)) (let ((_let_1 (tptp.g X))) (and (<= 0 _let_1) (or (= _let_1 X) (= _let_1 (- X))))))) (forall ((X Int)) (= (tptp.f X) (tptp.g X))))))
 (check-sat)
+(exit)

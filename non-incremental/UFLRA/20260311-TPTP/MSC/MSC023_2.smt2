@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((C Real) (F Real)) (=> (= (+ (* (/ 9 5) C) 32.0) F) (tptp.celsius_fahrenheit_temperature_conversion C F))))
 (assert (not (exists ((C Real)) (tptp.celsius_fahrenheit_temperature_conversion C 451.0))))
 (check-sat)
+(exit)

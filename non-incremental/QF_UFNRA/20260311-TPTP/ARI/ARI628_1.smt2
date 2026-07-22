@@ -29,3 +29,4 @@ v9.2.1 realease of TPTP.
 (assert (<= tptp.x tptp.y))
 (assert (not (< (* (* 2.0 (* tptp.u tptp.u)) tptp.x) (* (* tptp.y tptp.y) tptp.v))))
 (check-sat)
+(exit)

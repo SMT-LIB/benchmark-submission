@@ -73,3 +73,4 @@ v9.2.1 realease of TPTP.
 (assert (not (tptp.releasedAt tptp.spilling (tptp.at_time 0))))
 (assert (not (tptp.holdsAt (tptp.waterLevel 3) (tptp.at_time 4))))
 (check-sat)
+(exit)

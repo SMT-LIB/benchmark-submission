@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int Int Int) Int)
 (assert (not (or (exists ((X Int) (Y Int) (Z Int)) (= (tptp.f X X Y) (* 2 Z))) (exists ((X Int) (Y Int) (Z Int)) (= (tptp.f X Y Y) (+ (* 2 Z) 1))))))
 (check-sat)
+(exit)

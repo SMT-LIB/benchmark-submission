@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (>= 60 (* tptp.a tptp.a)))
 (assert (<= 50 (* tptp.a tptp.a)))
 (check-sat)
+(exit)

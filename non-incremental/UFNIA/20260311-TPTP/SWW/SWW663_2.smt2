@@ -140,3 +140,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((Left Int) (Right Int) (A0 tptp.array_int) (A tptp.array_int)) (= (tptp.partial_sum1 Left Right A0 A) (forall ((I Int)) (=> (and (< (- Left (- Right Left)) I) (<= I Right)) (= (tptp.tb2t (tptp.get2 tptp.int (tptp.t2tb2 A) I)) (tptp.sum3 A0 0 I)))))))
 (assert (not (forall ((A Int) (A1 tptp.map_int_int)) (=> (and (<= 0 A) (<= 2 A) (tptp.is_power_of_21 A)) (forall ((A0 Int) (A01 tptp.map_int_int)) (=> (and (<= 0 A0) (= A0 A) (forall ((I Int)) (let ((_let_1 (tptp.t2tb I))) (=> (and (<= 0 I) (< I A0)) (= (tptp.tb2t (tptp.get tptp.int tptp.int (tptp.t2tb1 A01) _let_1)) (tptp.tb2t (tptp.get tptp.int tptp.int (tptp.t2tb1 A1) _let_1))))))) (tptp.is_power_of_21 (- (- A 1) (- (tptp.div1 A 2) 1)))))))))
 (check-sat)
+(exit)

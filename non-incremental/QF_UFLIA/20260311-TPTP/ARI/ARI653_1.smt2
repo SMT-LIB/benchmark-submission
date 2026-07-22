@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (>= 6 (* 7 tptp.a)))
 (assert (<= 1 (* 5 tptp.a)))
 (check-sat)
+(exit)

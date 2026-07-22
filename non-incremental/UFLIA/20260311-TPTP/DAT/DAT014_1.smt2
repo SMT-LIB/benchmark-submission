@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X tptp.array) (Y Int) (Z Int) (X1 Int)) (or (= Y Z) (= (tptp.read (tptp.write X Y X1) Z) (tptp.read X Z)))))
 (assert (not (forall ((U tptp.array)) (=> (and (forall ((V Int)) (=> (and (<= 1 V) (<= V 10)) (> (tptp.read U V) V))) (forall ((W Int)) (=> (and (<= 11 W) (<= W 20)) (> (tptp.read U W) (- 20 W))))) (forall ((X Int)) (=> (and (<= 6 X) (<= X 15)) (> (tptp.read U X) 5)))))))
 (check-sat)
+(exit)

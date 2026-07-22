@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (= (* tptp.a tptp.b) 15))
 (assert (not (and (not (= tptp.a 0)) (>= tptp.a (- 15)) (<= tptp.a 15))))
 (check-sat)
+(exit)

@@ -73,3 +73,4 @@ v9.2.1 realease of TPTP.
 (assert (not (tptp.releasedAt tptp.spilling (tptp.at_time 0))))
 (assert (not (forall ((F tptp.fluent)) (let ((_let_1 (tptp.at_time 4))) (let ((_let_2 (tptp.at_time 3))) (=> (tptp.holdsAt F _let_2) (or (tptp.releasedAt F _let_1) (tptp.holdsAt (tptp.waterLevel 3) _let_2) (tptp.holdsAt F _let_1))))))))
 (check-sat)
+(exit)

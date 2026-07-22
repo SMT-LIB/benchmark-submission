@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.a () Int)
 (assert (= (* tptp.a tptp.a) 2))
 (check-sat)
+(exit)

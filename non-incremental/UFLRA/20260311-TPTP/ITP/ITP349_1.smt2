@@ -505,3 +505,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A__questionmark_v0 Real) (A__questionmark_v1 Real)) (= (<= A__questionmark_v0 (|tptp.'fun_app$a'| (|tptp.'times$'| A__questionmark_v0) A__questionmark_v1)) (and (=> (< 0.0 A__questionmark_v0) (<= 1.0 A__questionmark_v1)) (=> (< A__questionmark_v0 0.0) (<= A__questionmark_v1 1.0))))))
 (assert (forall ((A__questionmark_v0 Real) (A__questionmark_v1 Real)) (= (<= (|tptp.'fun_app$a'| (|tptp.'times$'| A__questionmark_v0) A__questionmark_v1) A__questionmark_v0) (and (=> (< 0.0 A__questionmark_v0) (<= A__questionmark_v1 1.0)) (=> (< A__questionmark_v0 0.0) (<= 1.0 A__questionmark_v1))))))
 (check-sat)
+(exit)

@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Real)) (and (= X (+ (/ 18446744073709551615 18446744073709551616) (/ 18446744073709551615 18446744073709551616))) (not (= X 2.0))))))
 (check-sat)
+(exit)

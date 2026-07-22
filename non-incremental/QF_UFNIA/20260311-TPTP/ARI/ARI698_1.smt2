@@ -38,3 +38,4 @@ v9.2.1 realease of TPTP.
 (assert (= (- (+ (+ (+ (+ (* tptp.n tptp.x6) (* 0 tptp.x5)) (* 0 tptp.x4)) (* 0 tptp.x3)) (* 0 tptp.x2)) tptp.x1) 0))
 (assert (not (and (= tptp.x6 0) (= tptp.x5 0) (= tptp.x4 0) (= tptp.x3 0) (= tptp.x2 0) (= tptp.x1 0))))
 (check-sat)
+(exit)

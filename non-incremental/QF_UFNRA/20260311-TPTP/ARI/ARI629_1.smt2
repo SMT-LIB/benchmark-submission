@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (> tptp.x 1.0))
 (assert (let ((_let_1 (+ 1.0 (* tptp.y tptp.y)))) (not (>= (* _let_1 tptp.x) _let_1))))
 (check-sat)
+(exit)

@@ -169,3 +169,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((U Int) (V Int)) (=> (<= 0 V) (=> (<= 0 U) (= (tptp.div2 (- (+ (* 2 U) 1) (+ (* 2 V) 1)) 2) (- U V))))))
 (assert (not (forall ((U Int) (V Int)) (let ((_let_1 (+ (* 2 V) 1))) (let ((_let_2 (+ (* 2 U) 1))) (let ((_let_3 (tptp.gcd1 _let_2 _let_1))) (=> (and (<= 0 V) (<= V U)) (and (= _let_3 (tptp.gcd1 (- _let_2 (* 1 _let_1)) _let_1)) (= _let_3 (tptp.gcd1 (- U V) _let_1))))))))))
 (check-sat)
+(exit)

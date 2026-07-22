@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.p (Real) Bool)
 (assert (not (=> (tptp.p (- (/ 5 12) (/ 1 12))) (tptp.p (/ 1 3)))))
 (check-sat)
+(exit)

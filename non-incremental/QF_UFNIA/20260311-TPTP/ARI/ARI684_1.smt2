@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.c () Int)
 (assert (not (= (* (* tptp.a (+ tptp.a tptp.b)) tptp.c) (+ (* (* tptp.a tptp.a) tptp.c) (* (* tptp.a tptp.b) tptp.c)))))
 (check-sat)
+(exit)

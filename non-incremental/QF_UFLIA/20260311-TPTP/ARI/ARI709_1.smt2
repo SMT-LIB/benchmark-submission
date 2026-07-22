@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (= (* 1 tptp.a) 3))
 (assert (not (= tptp.a 3)))
 (check-sat)
+(exit)

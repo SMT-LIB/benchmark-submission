@@ -825,3 +825,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((B tptp.tlbool)) (or (= B tptp.tltrue) (= B tptp.tlfalse))))
 (assert (not (= tptp.tltrue tptp.tlfalse)))
 (check-sat)
+(exit)

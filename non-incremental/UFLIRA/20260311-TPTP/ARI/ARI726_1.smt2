@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Real)) (and (is_int X) (> (* (/ 2 5) X) 1.0) (< (* (/ 3 10) X) 1.0)))))
 (check-sat)
+(exit)

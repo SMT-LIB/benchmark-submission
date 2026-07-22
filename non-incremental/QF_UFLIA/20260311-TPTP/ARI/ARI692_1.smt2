@@ -24,3 +24,4 @@ v9.2.1 realease of TPTP.
 (assert (= (+ (* 2 tptp.z) tptp.x) 2))
 (assert (= (+ (* 2 tptp.y) (* 3 tptp.x)) 1))
 (check-sat)
+(exit)

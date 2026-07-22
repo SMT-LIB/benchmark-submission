@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((U Int) (V Int)) (not (= (+ (* 4 U) (* 6 V)) 21)))))
 (check-sat)
+(exit)

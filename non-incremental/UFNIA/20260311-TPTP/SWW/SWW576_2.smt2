@@ -81,3 +81,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((Mem tptp.map_int_int) (Fp Int) (L4 Int)) (let ((_let_1 (tptp.tb2t1 (tptp.get tptp.int tptp.int (tptp.t2tb Mem) (tptp.t2tb1 (- Fp 16)))))) (= (tptp.inv_l21 Mem Fp L4) (and (<= 2 _let_1) (<= _let_1 11) (= L4 (- _let_1 2)) (tptp.inv1 Mem))))))
 (assert (not (forall ((Fp Int) (Mem tptp.map_int_int)) (=> (and (tptp.separation1 Fp) (tptp.inv1 Mem)) (forall ((L4 Int)) (=> (= L4 0) (forall ((L7 Int)) (=> (= L7 0) (forall ((R3 Int)) (=> (= R3 2) (forall ((Mem1 tptp.map_int_int)) (=> (= Mem1 (tptp.set2 Mem (- Fp 16) R3)) (tptp.inv_l21 Mem1 Fp L4)))))))))))))
 (check-sat)
+(exit)

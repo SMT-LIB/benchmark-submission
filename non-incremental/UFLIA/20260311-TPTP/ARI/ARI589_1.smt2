@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((Y Int) (Z Int)) (exists ((X Int)) (and (not (= Y X)) (not (= Z X)))))))
 (check-sat)
+(exit)

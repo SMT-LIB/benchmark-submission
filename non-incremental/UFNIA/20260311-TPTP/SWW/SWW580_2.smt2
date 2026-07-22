@@ -60,3 +60,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A Int) (B Int) (C Int)) (=> (<= (tptp.abs (- (* (* 2 A) B) (* 2 C))) A) (forall ((Bqt Int)) (<= (tptp.abs (- (* A B) C)) (tptp.abs (- (* A Bqt) C)))))))
 (assert (not (=> (<= 0 tptp.x2) (forall ((E Int) (Y Int) (X Int)) (=> (and (<= 0 X) (<= X tptp.x2)) (=> (and (= E (- (* (* 2 (+ X 1)) tptp.y2) (* (+ (* 2 Y) 1) tptp.x2))) (<= (* 2 (- tptp.y2 tptp.x2)) E) (<= E (* 2 tptp.y2))) (tptp.best X Y)))))))
 (check-sat)
+(exit)

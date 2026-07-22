@@ -24,3 +24,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.c () Int)
 (assert (not (=> (and (forall ((X Int) (Y Int)) (=> (<= X Y) (<= (tptp.f X) (tptp.f Y)))) (<= tptp.a tptp.b) (< tptp.b tptp.c)) (<= (tptp.f tptp.a) (tptp.f tptp.c)))))
 (check-sat)
+(exit)

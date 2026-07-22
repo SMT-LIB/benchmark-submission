@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (assert (= (* (* 6472 tptp.x) tptp.y) tptp.b))
 (assert (not (= (* 5235848 (* (* (* 123 tptp.x) tptp.x) tptp.a)) (* 12270523 (* (* 123 tptp.b) tptp.b)))))
 (check-sat)
+(exit)

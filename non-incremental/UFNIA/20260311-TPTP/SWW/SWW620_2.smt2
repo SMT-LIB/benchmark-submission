@@ -176,3 +176,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((J tptp.uni)) (=> (tptp.sort1 (tptp.map tptp.int tptp.elt7) J) (= (tptp.t2tb12 (tptp.tb2t12 J)) J))))
 (assert (not (forall ((A Int) (A1 tptp.map_int_elt3) (Lo Int)) (=> (and (<= 0 A) (<= 0 Lo) (< Lo A)) (tptp.sorted_sub4 (tptp.tb2t10 (tptp.mk_array1 tptp.elt7 A (tptp.t2tb12 A1))) Lo (+ Lo 1))))))
 (check-sat)
+(exit)

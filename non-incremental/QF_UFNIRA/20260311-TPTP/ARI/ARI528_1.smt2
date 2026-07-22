@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (= (+ (to_int (/ 2549 50)) (* 2 (* (to_int (/ 11 2)) 5))) 100)))
 (check-sat)
+(exit)

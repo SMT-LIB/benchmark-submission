@@ -31,3 +31,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((I Int)) (let ((_let_1 (tptp.perm I))) (=> (and (<= 1 I) (<= I tptp.n)) (and (<= 1 _let_1) (<= _let_1 tptp.n))))))
 (assert (forall ((J Int) (I Int)) (= (- I J) (- (tptp.perm J) (tptp.perm I)))))
 (check-sat)
+(exit)

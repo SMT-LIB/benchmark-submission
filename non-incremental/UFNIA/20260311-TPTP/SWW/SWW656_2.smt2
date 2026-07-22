@@ -150,3 +150,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.array_int) (X Int)) (let ((_let_1 (tptp.length1 tptp.int (tptp.t2tb1 A)))) (=> (and (<= 0 X) (<= X _let_1)) (tptp.is_longest_common_prefix1 A X X (- _let_1 X))))))
 (assert (not (forall ((A tptp.array_int) (X Int) (Y Int) (Z Int)) (=> (and (tptp.le1 A X Y) (tptp.le1 A Y Z)) (tptp.le1 A X Z)))))
 (check-sat)
+(exit)

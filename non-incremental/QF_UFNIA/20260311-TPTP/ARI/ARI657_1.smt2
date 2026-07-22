@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (<= tptp.a (- 3)))
 (assert (>= 5 (* tptp.a tptp.b)))
 (check-sat)
+(exit)

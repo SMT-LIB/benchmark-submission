@@ -50,3 +50,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.ty) (U tptp.uni)) (=> (tptp.sort1 (tptp.ref A) U) (= U (tptp.mk_ref A (tptp.contents A U))))))
 (assert (not (forall ((A Int) (B Int)) (let ((_let_1 (<= 0 A))) (=> (and _let_1 (< 0 B)) (and (= (+ (* 0 B) A) A) _let_1 (forall ((R Int) (Q Int)) (let ((_let_1 (<= B R))) (=> (and (= (+ (* Q B) R) A) (<= 0 R)) (and (=> _let_1 (forall ((Q1 Int)) (=> (= Q1 (+ Q 1)) (forall ((R1 Int)) (=> (= R1 (- R B)) (and (= (+ (* Q1 B) R1) A) (<= 0 R1) (<= 0 R) (< R1 R))))))) (=> (not _let_1) (exists ((R1 Int)) (and (= (+ (* Q B) R1) A) (<= 0 R1) (< R1 B))))))))))))))
 (check-sat)
+(exit)

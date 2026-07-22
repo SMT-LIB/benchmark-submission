@@ -97,3 +97,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((T tptp.map_int_lpoption_intrp)) (= (tptp.inv T) (forall ((X Int) (Y Int)) (=> (= (tptp.tb2t1 (tptp.get (tptp.option tptp.int) tptp.int (tptp.t2tb T) (tptp.t2tb2 X))) (tptp.tb2t1 (tptp.some tptp.int (tptp.t2tb2 Y)))) (= Y (tptp.fib X)))))))
 (assert (not (forall ((N Int) (Table tptp.map_int_lpoption_intrp)) (let ((_let_1 (and (<= 0 N) (tptp.inv Table)))) (=> _let_1 (=> (= (tptp.tb2t1 (tptp.get (tptp.option tptp.int) tptp.int (tptp.t2tb Table) (tptp.t2tb2 N))) (tptp.tb2t1 (tptp.none tptp.int))) (=> _let_1 (forall ((Table1 tptp.map_int_lpoption_intrp)) (=> (tptp.inv Table1) (forall ((Table2 tptp.map_int_lpoption_intrp)) (let ((_let_1 (tptp.fib N))) (=> (= Table2 (tptp.tb2t (tptp.set (tptp.option tptp.int) tptp.int (tptp.t2tb Table1) (tptp.t2tb2 N) (tptp.some tptp.int (tptp.t2tb2 _let_1))))) (and (= _let_1 _let_1) (tptp.inv Table2))))))))))))))
 (check-sat)
+(exit)

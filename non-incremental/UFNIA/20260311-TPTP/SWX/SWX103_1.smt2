@@ -64,3 +64,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((I_i Int)) (let ((_let_1 (tptp.f__integer__ I_i))) (=> (>= tptp.b_i 1) (= (tptp.sqrtb _let_1) (tptp.sqrt _let_1 (tptp.f__integer__ tptp.b_i)))))))
 (assert (not (forall ((I_i Int) (J_i Int) (N_i Int)) (=> (and (>= I_i 0) (>= J_i 0) (<= (* I_i J_i) tptp.b_i) (tptp.sqrtb (tptp.f__integer__ N_i))) (or (<= I_i N_i) (<= J_i N_i))))))
 (check-sat)
+(exit)

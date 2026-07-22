@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.p (Int) Bool)
 (assert (not (=> (tptp.p 2) (exists ((X Int) (Y Int)) (and (tptp.p X) (not (= X Y)) (= (* Y Y) 4))))))
 (check-sat)
+(exit)

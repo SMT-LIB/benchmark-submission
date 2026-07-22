@@ -103,3 +103,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.map_int_color) (I Int) (J Int) (K Int) (C tptp.color) (Cqt tptp.color)) (let ((_let_1 (tptp.t2tb2 K))) (let ((_let_2 (tptp.t2tb A))) (=> (and (<= I K) (< K J)) (=> (not (= C Cqt)) (=> (= (tptp.tb2t1 (tptp.get tptp.color1 tptp.int _let_2 _let_1)) C) (= (tptp.nb_occ (tptp.tb2t (tptp.set tptp.color1 tptp.int _let_2 _let_1 (tptp.t2tb1 Cqt))) I J C) (- (tptp.nb_occ A I J C) 1)))))))))
 (assert (not (forall ((A tptp.map_int_color) (I Int) (J Int) (K Int) (C tptp.color) (Cqt tptp.color)) (let ((_let_1 (tptp.t2tb2 K))) (let ((_let_2 (tptp.t2tb A))) (=> (and (<= I K) (< K J)) (=> (not (= C Cqt)) (=> (not (= (tptp.tb2t1 (tptp.get tptp.color1 tptp.int _let_2 _let_1)) C)) (= (tptp.nb_occ (tptp.tb2t (tptp.set tptp.color1 tptp.int _let_2 _let_1 (tptp.t2tb1 Cqt))) I J C) (tptp.nb_occ A I J C))))))))))
 (check-sat)
+(exit)

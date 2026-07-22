@@ -103,3 +103,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((J tptp.uni)) (= (tptp.t2tb2 (tptp.tb2t2 J)) J)))
 (assert (not (forall ((A Int) (A1 tptp.map_int_int) (X Int) (Y Int)) (let ((_let_1 (<= Y A))) (let ((_let_2 (<= 0 Y))) (let ((_let_3 (<= X A))) (let ((_let_4 (<= 0 X))) (=> (and (<= 0 A) _let_4 _let_3 _let_2 _let_1) (=> (not (= X Y)) (=> (and _let_4 _let_3 _let_2 _let_1) (forall ((L Int)) (let ((_let_1 (tptp.tb2t1 (tptp.mk_array1 tptp.int A (tptp.t2tb2 A1))))) (=> (tptp.is_longest_common_prefix1 _let_1 X Y L) (=> (not (= (+ X L) A)) (=> (= (+ Y L) A) (=> (< 0 1) (tptp.lt1 _let_1 Y X)))))))))))))))))
 (check-sat)
+(exit)

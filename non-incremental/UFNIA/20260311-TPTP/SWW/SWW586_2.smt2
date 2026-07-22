@@ -174,3 +174,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((W tptp.list_char)) (let ((_let_1 (tptp.char3 tptp.one1))) (let ((_let_2 (tptp.concat1 (tptp.star1 (tptp.alt1 (tptp.char3 tptp.zero1) _let_1)) _let_1))) (= (tptp.mem2 W _let_2) (tptp.mem2 (tptp.tb2t (tptp.cons tptp.char (tptp.t2tb1 tptp.zero1) (tptp.t2tb W))) (tptp.alt1 tptp.epsilon1 _let_2)))))))
 (assert (not (forall ((W tptp.list_char)) (let ((_let_1 (tptp.char3 tptp.one1))) (let ((_let_2 (tptp.alt1 tptp.epsilon1 (tptp.concat1 (tptp.star1 (tptp.alt1 (tptp.char3 tptp.zero1) _let_1)) _let_1)))) (= (tptp.mem2 W _let_2) (tptp.mem2 (tptp.tb2t (tptp.cons tptp.char (tptp.t2tb1 tptp.one1) (tptp.t2tb W))) _let_2)))))))
 (check-sat)
+(exit)

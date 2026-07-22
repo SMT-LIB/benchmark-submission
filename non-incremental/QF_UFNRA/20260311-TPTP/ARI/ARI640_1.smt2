@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (assert (> (* tptp.x tptp.y) (+ tptp.x tptp.y)))
 (assert (not false))
 (check-sat)
+(exit)

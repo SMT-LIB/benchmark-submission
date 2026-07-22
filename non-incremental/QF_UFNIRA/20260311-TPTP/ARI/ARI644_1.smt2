@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.b () Int)
 (assert (let ((_let_1 (to_real (* tptp.a tptp.a)))) (let ((_let_2 (/ (to_real tptp.b) _let_1))) (not (=> (not (= tptp.a 0)) (<= (ite (>= _let_1 0.0) (to_int _let_2) (- (to_int (- _let_2)))) tptp.b))))))
 (check-sat)
+(exit)

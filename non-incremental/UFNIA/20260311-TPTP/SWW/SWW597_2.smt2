@@ -150,3 +150,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((J tptp.uni)) (=> (tptp.sort (tptp.map tptp.int tptp.color1) J) (= (tptp.t2tb3 (tptp.tb2t3 J)) J))))
 (assert (not (forall ((A Int) (A1 tptp.map_int_color)) (=> (<= 0 A) (forall ((R Int) (I Int) (B Int) (A2 tptp.map_int_color)) (let ((_let_1 (tptp.t2tb3 A2))) (let ((_let_2 (tptp.mk_array tptp.color1 A _let_1))) (let ((_let_3 (tptp.tb2t1 _let_2))) (=> (and (<= 0 B) (<= B I) (<= I R) (<= R A) (tptp.monochrome _let_3 0 B tptp.blue) (tptp.monochrome _let_3 B I tptp.white) (tptp.monochrome _let_3 R A tptp.red) (tptp.permut_all tptp.color1 (tptp.mk_array tptp.color1 A (tptp.t2tb3 A1)) _let_2)) (=> (< I R) (=> (and (<= 0 A) (<= 0 I) (< I A)) (=> (= (tptp.tb2t2 (tptp.get tptp.color1 tptp.int _let_1 (tptp.t2tb I))) tptp.white) (forall ((I1 Int)) (=> (= I1 (+ I 1)) (tptp.monochrome (tptp.tb2t1 (tptp.mk_array tptp.color1 A (tptp.t2tb3 A2))) B I1 tptp.white)))))))))))))))
 (check-sat)
+(exit)

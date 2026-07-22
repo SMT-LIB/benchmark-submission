@@ -30,3 +30,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((T Int)) (not (and (tptp.at2 T) (tptp.at2 (+ T 1))))))
 (assert (forall ((T Int)) (not (tptp.at0 T))))
 (check-sat)
+(exit)

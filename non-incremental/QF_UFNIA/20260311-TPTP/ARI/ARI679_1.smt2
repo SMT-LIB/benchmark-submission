@@ -24,3 +24,4 @@ v9.2.1 realease of TPTP.
 (assert (<= 2 tptp.c))
 (assert (let ((_let_1 (- tptp.d 3))) (not (= (<= (* 2 3) (* tptp.c tptp.d)) (<= (* 2 _let_1) (* tptp.c _let_1))))))
 (check-sat)
+(exit)

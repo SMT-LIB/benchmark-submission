@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Real) (Y Real)) (=> (and (<= 0.0 X) (<= X Y)) (<= (tptp.sqrt X) (tptp.sqrt Y)))))
 (assert (not (= (tptp.sqrt 0.0) 0.0)))
 (check-sat)
+(exit)

@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (<= 4 (* tptp.a tptp.a)))
 (assert (not (or (<= tptp.a (- 2)) (<= 2 tptp.a))))
 (check-sat)
+(exit)

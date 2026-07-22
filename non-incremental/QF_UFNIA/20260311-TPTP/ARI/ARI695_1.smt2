@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.c () Int)
 (assert (not (= (+ (* (* (- 1) tptp.d) (+ 2 tptp.c)) (* (- 1) (* tptp.d (- (* (- 1) 2) tptp.c)))) 0)))
 (check-sat)
+(exit)

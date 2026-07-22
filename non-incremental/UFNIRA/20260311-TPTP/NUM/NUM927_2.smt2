@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((I Int) (X Int)) (=> (> I 1) (= (tptp.iterate_f I X) (tptp.iterate_f (- I 1) (tptp.f X))))))
 (assert (not (forall ((X Int)) (=> (>= X 1) (exists ((I1 Int) (I2 Int)) (and (>= I1 1) (> I2 I1) (= (tptp.iterate_f I1 X) (tptp.iterate_f I2 X))))))))
 (check-sat)
+(exit)

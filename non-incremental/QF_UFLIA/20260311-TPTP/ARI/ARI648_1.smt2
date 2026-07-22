@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (let ((_let_1 (* 2 tptp.a))) (or (> 8 (- _let_1 (* 4 tptp.b))) (< 0 _let_1))))
 (assert (not (or (= (+ (* 20 tptp.a) (* (- 1) (* 30 tptp.b))) 7) (>= 3 (+ tptp.a (* (- 1) (* 2 tptp.b)))) (<= 1 tptp.a))))
 (check-sat)
+(exit)

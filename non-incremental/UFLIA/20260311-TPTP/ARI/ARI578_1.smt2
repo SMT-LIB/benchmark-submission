@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Int) (Y Int)) (and (<= 2 X) (<= 2 Y) (<= (+ X Y) 9) (<= 12 (+ (* 2 X) Y))))))
 (check-sat)
+(exit)

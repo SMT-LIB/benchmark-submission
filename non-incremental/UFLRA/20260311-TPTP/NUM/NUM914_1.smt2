@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Real) (Y Real) (Z Real)) (= (= (+ X Y) Z) (and (= (- Z Y) X) (= (- Z X) Y))))))
 (check-sat)
+(exit)

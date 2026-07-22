@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.pow2 (Real) Bool)
 (assert (not (=> (forall ((X Real)) (= (tptp.pow2 X) (or (= X 1.0) (and (<= 2.0 X) (exists ((Y Real)) (and (= (* 2.0 Y) X) (tptp.pow2 Y))))))) (not (tptp.pow2 5.0)))))
 (check-sat)
+(exit)

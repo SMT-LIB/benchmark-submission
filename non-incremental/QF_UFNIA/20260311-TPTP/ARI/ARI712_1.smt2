@@ -25,3 +25,4 @@ v9.2.1 realease of TPTP.
 (assert (= (+ (+ (+ (* tptp.a tptp.a) (* (+ (* (* tptp.a tptp.b) tptp.c) (* (* tptp.b tptp.d) tptp.a)) (+ (+ (* (* tptp.c tptp.c) tptp.a) (* (* tptp.d tptp.d) tptp.b)) 1))) tptp.b) (* (- 1) (* (+ (+ (+ tptp.a tptp.b) tptp.c) tptp.d) (+ 2 tptp.c)))) 0))
 (assert (let ((_let_1 (* tptp.d tptp.c))) (let ((_let_2 (* tptp.c tptp.c))) (let ((_let_3 (* tptp.c tptp.b))) (let ((_let_4 (* tptp.d tptp.d))) (not (= (+ (* 1 (* (* (* (* _let_4 tptp.d) tptp.b) tptp.b) tptp.a)) (* (- 1) (+ (+ (+ (+ (+ (+ (+ (+ (+ (+ (+ (+ (+ (* 2 tptp.a) (* (- 1) (* tptp.a tptp.a))) tptp.b) (* 2 tptp.c)) (* (- 1) (* (* (* (* _let_4 tptp.c) tptp.b) tptp.b) tptp.a))) (* tptp.c tptp.a)) _let_3) (* (- 1) (* _let_3 tptp.a))) (* (- 1) (* (* (* (* _let_2 tptp.c) tptp.b) tptp.a) tptp.a))) (* 2 tptp.d)) _let_1) (* (- 1) (* (* tptp.d tptp.b) tptp.a))) _let_2) (* (- 1) (* (* (* (* _let_1 tptp.c) tptp.b) tptp.a) tptp.a))))) 0)))))))
 (check-sat)
+(exit)

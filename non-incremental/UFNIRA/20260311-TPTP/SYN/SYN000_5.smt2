@@ -101,3 +101,4 @@ v9.2.1 realease of TPTP.
 (assert (tptp.p_real (/ 33 10)))
 (assert (not (exists ((X Int) (Y Real) (Z Real)) (and (= Y (to_real (+ X 2))) (or (< (to_int Y) 3) (> Y (/ 33 10)))))))
 (check-sat)
+(exit)

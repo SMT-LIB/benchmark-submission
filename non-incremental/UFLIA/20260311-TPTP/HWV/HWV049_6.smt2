@@ -1173,3 +1173,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((VarNext tptp.state_type)) (=> true (= (tptp.v6 VarNext) (tptp.v13 VarNext)))))
 (assert (forall ((VarCurr tptp.state_type) (VarNext tptp.state_type)) (=> (tptp.nextState VarCurr VarNext) (= (tptp.v13 VarNext) (tptp.v9 VarCurr)))))
 (check-sat)
+(exit)

@@ -29,3 +29,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.munich () tptp.city)
 (assert (not (=> (and (forall ((X tptp.city) (Y tptp.city)) (= (tptp.d X Y) (tptp.d Y X))) (forall ((X tptp.city) (Y tptp.city) (Z tptp.city)) (<= (tptp.d X Z) (+ (tptp.d X Y) (tptp.d Y Z)))) (forall ((X tptp.city)) (= (tptp.d X X) 0)) (= (tptp.d tptp.berlin tptp.munich) 510) (= (tptp.d tptp.berlin tptp.cologne) 480) (= (tptp.d tptp.berlin tptp.frankfurt) 420) (= (tptp.d tptp.saarbruecken tptp.frankfurt) 160) (= (tptp.d tptp.saarbruecken tptp.cologne) 190) (= (tptp.d tptp.hamburg tptp.cologne) 360) (= (tptp.d tptp.hamburg tptp.frankfurt) 390) (= (tptp.d tptp.cologne tptp.frankfurt) 150) (= (tptp.d tptp.hamburg tptp.kiel) 90) (= (tptp.d tptp.hamburg tptp.berlin) 250) (= (tptp.d tptp.munich tptp.frankfurt) 300) (= (tptp.d tptp.munich tptp.saarbruecken) 360)) (<= (tptp.d tptp.kiel tptp.saarbruecken) 640))))
 (check-sat)
+(exit)

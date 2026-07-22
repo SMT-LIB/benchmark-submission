@@ -58,3 +58,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((N Int)) (=> (< 0 N) (= (tptp.fact1 N) (* N (tptp.fact1 (- N 1)))))))
 (assert (not (forall ((X Int)) (=> (<= 0 X) (forall ((Y Int)) (=> (= Y 1) (forall ((Z Int)) (=> (= Z X) (and (<= 0 Z) (= (* Y (tptp.fact1 Z)) (tptp.fact1 X)) (forall ((Z1 Int) (Y1 Int)) (let ((_let_1 (tptp.fact1 X))) (let ((_let_2 (not (= Z1 0)))) (=> (and (<= 0 Z1) (= (* Y1 (tptp.fact1 Z1)) _let_1)) (and (=> _let_2 (forall ((Y2 Int)) (=> (= Y2 (* Y1 Z1)) (forall ((Z2 Int)) (=> (= Z2 (- Z1 1)) (and (<= 0 Z2) (= (* Y2 (tptp.fact1 Z2)) (tptp.fact1 X)) (<= 0 Z1) (< Z2 Z1))))))) (=> (not _let_2) (= Y1 _let_1))))))))))))))))
 (check-sat)
+(exit)

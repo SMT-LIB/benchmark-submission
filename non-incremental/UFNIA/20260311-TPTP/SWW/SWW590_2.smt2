@@ -79,3 +79,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((N Int)) (=> (< 0 N) (=> (tptp.p1 (- N 1)) (=> (and (not (= (tptp.mod1 N 3) 0)) (= (tptp.mod1 N 5) 0)) (tptp.p1 N))))))
 (assert (not (forall ((N Int)) (=> (< 0 N) (=> (tptp.p1 (- N 1)) (=> (and (= (tptp.mod1 N 3) 0) (= (tptp.mod1 N 5) 0)) (tptp.p1 N)))))))
 (check-sat)
+(exit)

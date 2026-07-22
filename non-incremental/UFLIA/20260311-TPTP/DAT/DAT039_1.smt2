@@ -40,3 +40,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X16 Int) (X17 tptp.collection)) (=> (tptp.in X16 X17) (= X17 (tptp.add X16 (tptp.remove X16 X17))))))
 (assert (not (forall ((U tptp.collection) (V Int)) (=> (and (tptp.in 2 U) (tptp.in 3 U) (= (tptp.count U) 2) (> V 3)) (not (tptp.in V U))))))
 (check-sat)
+(exit)

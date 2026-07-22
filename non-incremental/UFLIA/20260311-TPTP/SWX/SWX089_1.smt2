@@ -55,3 +55,4 @@ v9.2.1 realease of TPTP.
 (assert (and (=> tptp.hp tptp.hq) (=> tptp.tp tptp.tq)))
 (assert (not (and (=> tptp.hp tptp.hq) (=> tptp.tp tptp.tq))))
 (check-sat)
+(exit)

@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real)) (=> (= (* (/ 29 4) X) 29.0) (= X 4.0)))))
 (check-sat)
+(exit)

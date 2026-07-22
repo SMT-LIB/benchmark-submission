@@ -215,3 +215,4 @@ v9.2.1 realease of TPTP.
 (assert (not (forall ((X_651 tptp.set_0)) (=> (forall ((X_652 Int)) (= (tptp.mem0 X_652 X_651) false)) (tptp.mem4 tptp.g_s90_81 X_651 tptp.g_s64_75)))))
 (assert (not (forall ((X_653 Int) (X_654 Int)) (=> (and (tptp.mem2 tptp.g_s90_81 X_653 tptp.g_s78_64) (tptp.mem2 tptp.g_s90_81 X_654 tptp.g_s79_65)) (<= X_653 X_654)))))
 (check-sat)
+(exit)

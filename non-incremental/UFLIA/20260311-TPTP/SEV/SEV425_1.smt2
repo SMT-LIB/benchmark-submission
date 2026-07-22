@@ -43,3 +43,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.set) (B tptp.set)) (= (= (tptp.intersection A B) tptp.empty_set) (= (tptp.cardinality (tptp.union A B)) (+ (tptp.cardinality A) (tptp.cardinality B))))))
 (assert (not (forall ((C tptp.set) (A0 tptp.set) (A1 tptp.set) (A2 tptp.set) (X1 tptp.element) (X2 tptp.element) (X3 tptp.element)) (let ((_let_1 (tptp.singleton X2))) (let ((_let_2 (tptp.singleton X1))) (=> (and (tptp.subset C A0) (not (tptp.member X1 A0)) (tptp.subset (tptp.union A0 _let_2) A1) (not (tptp.member X2 A1)) (tptp.subset (tptp.union A1 _let_1) A2) (not (tptp.member X3 A2))) (= (tptp.cardinality (tptp.union (tptp.union (tptp.union C _let_2) _let_1) (tptp.singleton X3))) (+ (tptp.cardinality C) 3))))))))
 (check-sat)
+(exit)

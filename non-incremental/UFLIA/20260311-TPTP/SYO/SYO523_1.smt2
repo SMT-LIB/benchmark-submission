@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int) Int)
 (assert (let ((_let_1 (tptp.f 5))) (let ((_let_2 (tptp.f 4))) (let ((_let_3 (tptp.f 3))) (not (=> (and (forall ((X Int) (Y Int)) (=> (= (tptp.f X) (tptp.f Y)) (= X Y))) (< 6 _let_3) (< _let_3 9) (< 6 _let_2) (< _let_2 9)) (or (<= _let_1 6) (<= 9 _let_1))))))))
 (check-sat)
+(exit)

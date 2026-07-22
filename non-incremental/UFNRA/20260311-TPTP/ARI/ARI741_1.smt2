@@ -50,3 +50,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Real)) (=> (< 0.0 X) (= (tptp.pow X (/ 1 2)) (tptp.sqrt X)))))
 (assert (not (= (tptp.pow 2.0 2.0) 4.0)))
 (check-sat)
+(exit)

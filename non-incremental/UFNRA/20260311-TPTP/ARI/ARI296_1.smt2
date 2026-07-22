@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real)) (=> (= (* (/ 5 8) (/ 2 5)) X) (= X (/ 1 4))))))
 (check-sat)
+(exit)

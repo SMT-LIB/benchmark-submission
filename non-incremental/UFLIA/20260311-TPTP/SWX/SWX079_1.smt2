@@ -58,3 +58,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((V1_g tptp.general)) (let ((_let_1 (tptp.in_cover V1_g))) (= _let_1 (and (exists ((I_i Int) (J_i Int) (K_i Int)) (and (= I_i 1) (= J_i tptp.n_i) (= V1_g (tptp.f__integer__ K_i)) (<= I_i K_i) (<= K_i J_i))) true (not (not _let_1)))))))
 (assert (not (forall ((Y_g tptp.general)) (=> (tptp.in_cover Y_g) (exists ((I_i Int)) (and (= Y_g (tptp.f__integer__ I_i)) (>= I_i 1) (<= I_i tptp.n_i)))))))
 (check-sat)
+(exit)

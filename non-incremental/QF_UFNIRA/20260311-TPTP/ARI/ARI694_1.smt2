@@ -39,3 +39,4 @@ v9.2.1 realease of TPTP.
 (assert (= (* 4 tptp.x8) (+ (* 5 tptp.x9) 1)))
 (assert (let ((_let_1 (to_real 1953125))) (let ((_let_2 (to_real (+ tptp.x0 4)))) (let ((_let_3 (/ _let_2 _let_1))) (not (= (to_int (- _let_2 (* (ite (>= _let_3 0.0) (to_int _let_3) (- (to_int (- _let_3)))) _let_1))) 0))))))
 (check-sat)
+(exit)

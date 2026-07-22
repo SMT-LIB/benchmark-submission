@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (= (+ (* 5 tptp.a) (* 11 tptp.b)) 1))
 (assert (let ((_let_1 (* tptp.a tptp.b))) (not (or (<= (- 2) _let_1) (>= (- 36) _let_1)))))
 (check-sat)
+(exit)

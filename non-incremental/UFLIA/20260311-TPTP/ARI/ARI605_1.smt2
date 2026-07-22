@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Int) Int)
 (assert (not (=> (forall ((X Int)) (> (tptp.f X) X)) (exists ((Y Int)) (and (< (+ tptp.a tptp.b) Y) (< Y (+ (tptp.f tptp.a) (tptp.f tptp.b))))))))
 (check-sat)
+(exit)

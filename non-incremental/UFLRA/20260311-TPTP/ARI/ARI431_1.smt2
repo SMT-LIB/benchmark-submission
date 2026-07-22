@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real)) (=> (= (- X (/ 241 20)) 4.0) (= X (/ 321 20))))))
 (check-sat)
+(exit)

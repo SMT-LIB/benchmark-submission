@@ -40,3 +40,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((U tptp.record)) (let ((_let_1 (tptp.next U))) (=> (and (tptp.isrecord U) (tptp.isrecord _let_1)) (= (tptp.data (tptp.split2 U)) (tptp.data _let_1))))))
 (assert (forall ((U tptp.record)) (let ((_let_1 (tptp.next U))) (=> (and (tptp.isrecord U) (tptp.isrecord _let_1)) (= (tptp.next (tptp.split2 U)) (tptp.split2 (tptp.next _let_1)))))))
 (check-sat)
+(exit)

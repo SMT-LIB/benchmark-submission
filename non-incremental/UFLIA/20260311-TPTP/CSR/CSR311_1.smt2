@@ -73,3 +73,4 @@ v9.2.1 realease of TPTP.
 (assert (not (tptp.releasedAt tptp.spilling (tptp.at_time 0))))
 (assert (let ((_let_1 (tptp.at_time 3))) (not (or (tptp.holdsAt tptp.filling _let_1) (tptp.holdsAt tptp.spilling _let_1)))))
 (check-sat)
+(exit)

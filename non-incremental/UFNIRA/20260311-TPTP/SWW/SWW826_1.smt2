@@ -484,3 +484,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A__questionmark_v0 Int)) (=> (<= 0 A__questionmark_v0) (= (tptp.f20 tptp.f21 (tptp.f18 tptp.f19 A__questionmark_v0)) A__questionmark_v0))))
 (assert (forall ((A__questionmark_v0 Int)) (=> (< A__questionmark_v0 0) (= (tptp.f20 tptp.f21 (tptp.f18 tptp.f19 A__questionmark_v0)) 0))))
 (check-sat)
+(exit)

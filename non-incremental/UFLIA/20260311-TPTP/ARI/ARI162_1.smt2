@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Int) (Y Int)) (and (= (+ X Y) 8) (= (- X Y) 0)))))
 (check-sat)
+(exit)

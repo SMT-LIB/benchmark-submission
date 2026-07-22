@@ -78,3 +78,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A tptp.ty) (U tptp.uni)) (=> (tptp.sort (tptp.ref A) U) (= U (tptp.mk_ref A (tptp.contents A U))))))
 (assert (not (forall ((X Int) (N Int)) (=> (<= 0 N) (forall ((E Int) (P Int) (R Int)) (let ((_let_1 (tptp.power X N))) (=> (and (<= 0 E) (= (* R (tptp.power P E)) _let_1)) (=> (not (< 0 E)) (= R _let_1)))))))))
 (check-sat)
+(exit)

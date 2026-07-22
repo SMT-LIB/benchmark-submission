@@ -26,3 +26,4 @@ v9.2.1 realease of TPTP.
 (assert (<= tptp.d tptp.c))
 (assert (not (<= 0 (* (- tptp.a tptp.b) (- tptp.c tptp.d)))))
 (check-sat)
+(exit)

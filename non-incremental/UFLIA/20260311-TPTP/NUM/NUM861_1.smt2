@@ -36,3 +36,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int) (Y Int) (N Int)) (= (tptp.minsol_model_ub X Y N) (and (tptp.model_ub X Y N) (forall ((Z Int)) (=> (tptp.model_ub X Y Z) (<= N Z)))))))
 (assert (not (forall ((X Int) (Y Int) (Z Int)) (= (tptp.minsol_model_ub X Y Z) (tptp.minsol_model_max X Y Z)))))
 (check-sat)
+(exit)

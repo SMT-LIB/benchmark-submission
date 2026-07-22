@@ -31,3 +31,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int) (Y Int)) (let ((_let_1 (tptp.possible_position X Y tptp.middle))) (let ((_let_2 (tptp.possible_position X Y tptp.top))) (let ((_let_3 (tptp.possible_position X Y tptp.ground))) (and (=> _let_3 _let_1) (=> _let_1 (and _let_3 _let_2)) (=> _let_2 _let_1)))))))
 (assert (not (tptp.possible_position 3 (- 5) tptp.space)))
 (check-sat)
+(exit)

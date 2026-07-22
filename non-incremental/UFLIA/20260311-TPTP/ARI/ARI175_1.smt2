@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((U Int) (V Int)) (= (+ (* 3 U) (* 5 V)) 23))))
 (check-sat)
+(exit)

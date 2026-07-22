@@ -101,3 +101,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((J tptp.uni)) (= (tptp.t2tb2 (tptp.tb2t2 J)) J)))
 (assert (not (forall ((A Int) (A1 tptp.map_int_int) (X Int) (Y Int)) (=> (and (<= 0 A) (<= 0 X) (<= X A) (<= 0 Y) (<= Y A)) (forall ((L Int)) (let ((_let_1 (+ Y L))) (let ((_let_2 (tptp.t2tb2 A1))) (let ((_let_3 (+ X L))) (let ((_let_4 (< _let_3 A))) (let ((_let_5 (< _let_1 A))) (=> (tptp.is_common_prefix1 (tptp.tb2t1 (tptp.mk_array1 tptp.int A _let_2)) X Y L) (=> _let_4 (=> _let_5 (=> (and (<= 0 _let_1) _let_5) (=> (and (<= 0 _let_3) _let_4) (=> (= (tptp.tb2t (tptp.get tptp.int tptp.int _let_2 (tptp.t2tb _let_3))) (tptp.tb2t (tptp.get tptp.int tptp.int _let_2 (tptp.t2tb _let_1)))) (forall ((L1 Int)) (=> (= L1 (+ L 1)) (tptp.is_common_prefix1 (tptp.tb2t1 (tptp.mk_array1 tptp.int A (tptp.t2tb2 A1))) X Y L1)))))))))))))))))))
 (check-sat)
+(exit)

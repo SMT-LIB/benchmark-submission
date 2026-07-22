@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real) (Y Real)) (=> (and (is_int X) (is_int (+ (* 5.0 X) Y))) (is_int Y)))))
 (check-sat)
+(exit)

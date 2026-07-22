@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.b () Int)
 (assert (not (exists ((X Int)) (and (= (+ 2 2) X) (forall ((Y Int)) (or (= Y tptp.a) (= Y tptp.b)))))))
 (check-sat)
+(exit)

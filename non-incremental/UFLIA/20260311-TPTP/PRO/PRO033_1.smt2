@@ -22,3 +22,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int)) (or (tptp.f X) (tptp.f (+ 1 X)) (tptp.f (+ 2 X)))))
 (assert (forall ((X Int)) (or (not (tptp.f X)) (not (tptp.f (+ 1 X))) (not (tptp.f (+ 2 X))))))
 (check-sat)
+(exit)

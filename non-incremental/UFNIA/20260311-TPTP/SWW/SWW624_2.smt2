@@ -161,3 +161,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int) (Y Int) (Z Int)) (=> (and (< 0 X) (<= 0 Y) (<= 0 Z)) (= (tptp.mod (+ (* X Y) Z) X) (tptp.mod Z X)))))
 (assert (let ((_let_1 (tptp.nil tptp.elt1))) (not (and (tptp.permut tptp.elt1 (tptp.prefix tptp.elt1 (tptp.length tptp.elt1 _let_1) _let_1) _let_1) (forall ((X tptp.elt) (X1 tptp.list_elt)) (let ((_let_1 (tptp.t2tb X1))) (let ((_let_2 (tptp.cons tptp.elt1 (tptp.t2tb1 X) _let_1))) (=> (tptp.permut tptp.elt1 (tptp.prefix tptp.elt1 (tptp.length tptp.elt1 _let_1) _let_1) _let_1) (tptp.permut tptp.elt1 (tptp.prefix tptp.elt1 (tptp.length tptp.elt1 _let_2) _let_2) _let_2)))))))))
 (check-sat)
+(exit)

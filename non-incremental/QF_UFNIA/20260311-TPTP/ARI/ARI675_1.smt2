@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.a () Int)
 (assert (let ((_let_1 (* tptp.a tptp.a))) (not (<= 0 (+ (+ (* (* _let_1 tptp.a) tptp.a) _let_1) 10)))))
 (check-sat)
+(exit)

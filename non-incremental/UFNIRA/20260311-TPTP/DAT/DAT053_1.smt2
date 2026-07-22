@@ -43,3 +43,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.b () tptp.record)
 (assert (let ((_let_1 (tptp.length tptp.b))) (let ((_let_2 (* 2 (tptp.length (tptp.split1 tptp.b))))) (let ((_let_3 (tptp.length tptp.a))) (let ((_let_4 (* 2 (tptp.length (tptp.split1 tptp.a))))) (let ((_let_5 (tptp.next tptp.b))) (not (=> (and (tptp.isrecord tptp.b) (tptp.isrecord _let_5) (= (tptp.next _let_5) tptp.a) (or (= _let_4 (+ _let_3 1)) (= _let_4 _let_3))) (or (= _let_2 (+ _let_1 1)) (= _let_2 _let_1))))))))))
 (check-sat)
+(exit)

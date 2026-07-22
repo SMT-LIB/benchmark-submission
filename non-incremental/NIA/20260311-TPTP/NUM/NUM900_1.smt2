@@ -19,3 +19,4 @@ v9.2.1 realease of TPTP.
 ; SZS status Success
 (assert (not (forall ((X Int) (Y Int) (Z Int)) (=> (and (= (- X Y) Z) (< 0 Z)) (< Y X)))))
 (check-sat)
+(exit)

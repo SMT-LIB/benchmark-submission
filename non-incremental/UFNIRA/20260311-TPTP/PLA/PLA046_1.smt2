@@ -30,3 +30,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((Z Real)) (= (tptp.mysum 0 Z) 0.0)))
 (assert (forall ((M Int) (Z Real)) (=> (<= 1 M) (= (tptp.mysum M Z) (+ (tptp.mysum (- M 1) Z) (* (tptp.recf M Z 110) (to_real M)))))))
 (check-sat)
+(exit)

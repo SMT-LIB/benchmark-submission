@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Int)) (=> (and (< (- 1) X) (< X 1)) (= (+ 21 X) 21)))))
 (check-sat)
+(exit)

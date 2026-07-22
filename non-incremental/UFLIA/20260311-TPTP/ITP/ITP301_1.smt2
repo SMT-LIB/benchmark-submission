@@ -927,3 +927,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A__questionmark_v0 |tptp.'Nat$'|)) (= (|tptp.'nat$a'| (|tptp.'of_nat$'| A__questionmark_v0)) A__questionmark_v0)))
 (assert (forall ((A__questionmark_v0 Int)) (let ((_let_1 (|tptp.'of_nat$'| (|tptp.'nat$a'| A__questionmark_v0)))) (let ((_let_2 (<= 0 A__questionmark_v0))) (and (=> _let_2 (= _let_1 A__questionmark_v0)) (=> (not _let_2) (= _let_1 0)))))))
 (check-sat)
+(exit)

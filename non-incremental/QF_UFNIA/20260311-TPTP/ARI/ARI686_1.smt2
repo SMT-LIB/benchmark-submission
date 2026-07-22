@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (= (* tptp.a (+ tptp.a (* (- 1) (* (* 2 tptp.a) (+ tptp.a (* (* 3 tptp.a) (+ tptp.a (* (- 1) (* (* 4 tptp.a) (+ tptp.a (* (* 5 tptp.a) (+ tptp.a (* (- 1) (* (* 6 tptp.a) (+ tptp.a (* (* 7 tptp.a) (+ tptp.a (* (- 1) (* (* 8 tptp.a) (+ 9 tptp.a)))))))))))))))))))) 0))
 (assert (let ((_let_1 (* tptp.a tptp.a))) (let ((_let_2 (* _let_1 tptp.a))) (let ((_let_3 (* (* _let_2 tptp.a) tptp.a))) (let ((_let_4 (* _let_3 tptp.a))) (let ((_let_5 (* _let_4 tptp.a))) (not (= (+ (* 2 (* _let_5 tptp.a)) (* (- 1) (+ (+ (+ (+ (+ (* 612 tptp.a) (* (- 1) _let_1)) (* (- 2) _let_2)) (* 2 _let_3)) (* (- 2) _let_4)) (* (- 2) _let_5)))) 0))))))))
 (check-sat)
+(exit)

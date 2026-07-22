@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (= (+ (* 5 tptp.x4) (* 3 tptp.x2)) 0))
 (assert (= (+ (* 7 tptp.x3) (* 11 tptp.x2)) 0))
 (check-sat)
+(exit)

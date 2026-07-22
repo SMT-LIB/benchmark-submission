@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Real) (Y Real)) (and (= (+ X Y) (/ 36 5)) (= (- X Y) 0.0)))))
 (check-sat)
+(exit)

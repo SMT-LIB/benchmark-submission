@@ -44,3 +44,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((N Int) (L tptp.list)) (= (tptp.in N L) (> (tptp.count N L) 0))))
 (assert (not (not (exists ((L tptp.list)) (= (tptp.length L) (tptp.length (tptp.cons 1 L)))))))
 (check-sat)
+(exit)

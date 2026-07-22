@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Real) Real)
 (assert (not (not (forall ((X Real) (Y Real)) (let ((_let_1 (tptp.f Y))) (let ((_let_2 (tptp.f X))) (or (= X Y) (< _let_2 _let_1) (>= _let_2 (+ _let_1 1.0)))))))))
 (check-sat)
+(exit)

@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int) (Y Int) (Z Int) (R tptp.list)) (let ((_let_1 (tptp.mycons Y (tptp.mycons Z R)))) (=> (and (< X Y) (>= Z (+ X Y)) (tptp.fib_sorted _let_1)) (tptp.fib_sorted (tptp.mycons X _let_1))))))
 (assert (not (tptp.fib_sorted (tptp.mycons 1 (tptp.mycons 2 (tptp.mycons 4 (tptp.mycons 7 (tptp.mycons 100 tptp.nil))))))))
 (check-sat)
+(exit)

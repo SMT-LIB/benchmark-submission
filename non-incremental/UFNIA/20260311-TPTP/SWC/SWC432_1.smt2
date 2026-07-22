@@ -60,3 +60,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int)) (let ((_let_1 (+ (* X X) 1))) (let ((_let_2 (* 2 (tptp.v2 X)))) (let ((_let_3 (tptp.fast X))) (let ((_let_4 (<= X 0))) (and (=> _let_4 (= _let_3 (* (+ _let_2 1) _let_1))) (=> (not _let_4) (= _let_3 (* (+ _let_2 2) _let_1))))))))))
 (assert (not (not (exists ((C Int)) (and (>= C 0) (not (= (tptp.small C) (tptp.fast C))))))))
 (check-sat)
+(exit)

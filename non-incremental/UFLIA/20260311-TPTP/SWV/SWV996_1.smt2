@@ -25,3 +25,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.b (Int) Int)
 (assert (not (=> (and (forall ((Z1 Int)) (let ((_let_1 (tptp.a Z1))) (and (<= 1 _let_1) (<= _let_1 12)))) (forall ((Z1 Int)) (let ((_let_1 (tptp.b Z1))) (and (<= 1 _let_1) (<= _let_1 5)))) true (not (= tptp.z1 tptp.z2)) (not (= tptp.z1 tptp.z3)) (not (= tptp.z2 tptp.z3)) (forall ((Z1 Int) (Z2 Int)) (not (and (not (= Z1 Z2)) (= (tptp.a Z1) 10) (= (tptp.a Z2) 10))))) (not (and (= (tptp.a tptp.z1) 9) (= (tptp.a tptp.z2) 10) (< (tptp.b tptp.z2) 3) (< tptp.z2 tptp.z1))))))
 (check-sat)
+(exit)

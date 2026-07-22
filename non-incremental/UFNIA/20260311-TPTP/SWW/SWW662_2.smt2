@@ -127,3 +127,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int)) (= (tptp.is_power_of_21 X) (exists ((K Int)) (and (<= 0 K) (= X (tptp.power1 2 K)))))))
 (assert (not (forall ((X Int)) (=> (tptp.is_power_of_21 X) (=> (< 1 X) (= (* 2 (tptp.div1 X 2)) X))))))
 (check-sat)
+(exit)

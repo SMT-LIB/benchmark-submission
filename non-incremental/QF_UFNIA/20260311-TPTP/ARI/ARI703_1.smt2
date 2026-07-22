@@ -27,3 +27,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.w () Int)
 (assert (= (+ (+ (+ (+ (+ (+ (* tptp.x tptp.x) (* tptp.y tptp.y)) (* tptp.z tptp.z)) (* tptp.t tptp.t)) (* tptp.u tptp.u)) (* tptp.v tptp.v)) (* tptp.w tptp.w)) 1234567890987654321))
 (check-sat)
+(exit)

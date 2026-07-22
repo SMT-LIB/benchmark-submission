@@ -32,3 +32,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Real)) (= (tptp.log10 X) (/ (tptp.log X) (tptp.log 10.0)))))
 (assert (not (= (tptp.log (tptp.exp 1.0)) 1.0)))
 (check-sat)
+(exit)

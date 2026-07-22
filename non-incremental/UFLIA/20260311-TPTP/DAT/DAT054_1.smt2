@@ -25,3 +25,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.a () tptp.element)
 (assert (let ((_let_1 (tptp.next tptp.a))) (not (=> (and (forall ((X tptp.element) (Z Int)) (or (not (tptp.iselem X)) (not (= (tptp.data X) Z)) (< 0 Z))) (forall ((X tptp.element) (Y tptp.element)) (or (not (tptp.iselem X)) (not (tptp.iselem (tptp.next Y))) (not (= (tptp.next X) Y)) (< (tptp.data Y) (tptp.data X)))) (tptp.iselem tptp.a) (tptp.iselem _let_1) (tptp.iselem (tptp.next _let_1))) (<= 3 (tptp.data tptp.a))))))
 (check-sat)
+(exit)

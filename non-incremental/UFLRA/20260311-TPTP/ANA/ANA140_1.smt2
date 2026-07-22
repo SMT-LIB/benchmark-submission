@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.a () Real)
 (assert (not (forall ((Epsilon Real)) (=> (< 0.0 Epsilon) (exists ((Delta Real)) (and (< 0.0 Delta) (forall ((X Real)) (let ((_let_1 (- X tptp.a))) (let ((_let_2 (- _let_1))) (let ((_let_3 (>= _let_1 0.0))) (let ((_let_4 (not _let_3))) (=> (and (not (= X tptp.a)) (=> _let_3 (< _let_1 Delta)) (=> _let_4 (< _let_2 Delta))) (and (=> _let_3 (< _let_1 Epsilon)) (=> _let_4 (< _let_2 Epsilon)))))))))))))))
 (check-sat)
+(exit)

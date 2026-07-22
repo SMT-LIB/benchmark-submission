@@ -192,3 +192,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((J tptp.uni)) (= (tptp.t2tb8 (tptp.tb2t8 J)) J)))
 (assert (not (forall ((Table tptp.map_lpintcm_setrp_lpoption_lpintcm_map_int_intrprp)) (=> (forall ((K Int) (K1 tptp.set1)) (let ((_let_1 (tptp.tuple2 tptp.int (tptp.map tptp.int tptp.int)))) (= (tptp.tb2t6 (tptp.get (tptp.option _let_1) (tptp.tuple2 tptp.int tptp.set2) (tptp.t2tb8 Table) (tptp.tuple21 tptp.int tptp.set2 (tptp.t2tb2 K) (tptp.t2tb4 K1)))) (tptp.tb2t6 (tptp.none _let_1))))) (forall ((K tptp.lpintcm_setrp) (V tptp.lpintcm_map_int_intrp)) (let ((_let_1 (tptp.tuple2 tptp.int (tptp.map tptp.int tptp.int)))) (let ((_let_2 (tptp.tuple2 tptp.int tptp.set2))) (=> (= (tptp.tb2t6 (tptp.mixfix_lbrb _let_1 _let_2 (tptp.mk_t _let_1 _let_2 (tptp.t2tb8 Table)) (tptp.t2tb3 K))) (tptp.tb2t6 (tptp.some _let_1 (tptp.t2tb5 V)))) (tptp.post K V)))))))))
 (check-sat)
+(exit)

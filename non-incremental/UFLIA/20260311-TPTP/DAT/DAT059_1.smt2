@@ -32,3 +32,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((Ar tptp.array) (Ar0 tptp.array)) (= (= Ar Ar0) (forall ((N Int)) (= (tptp.get Ar N) (tptp.get Ar0 N))))))
 (assert (not (forall ((D1 tptp.data) (Ar tptp.array) (M Int) (D2 tptp.data)) (= (tptp.put (tptp.put Ar M D1) M D2) (tptp.put Ar M D2)))))
 (check-sat)
+(exit)

@@ -47,3 +47,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((D Real) (T Int) (C Int)) (= (tptp.mysumr D T C 0) 0.0)))
 (assert (forall ((D Real) (T Int) (C Int) (K Int)) (=> (<= 1 K) (= (tptp.mysumr D T C K) (+ (* (tptp.dc D T C) (* (tptp.recexp D T K) (to_real (tptp.lk K)))) (tptp.mysumr D C T (- K 1)))))))
 (check-sat)
+(exit)

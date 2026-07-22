@@ -331,3 +331,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A__questionmark_xu558_524 tptp.c_unsorted) (A__questionmark_voiduPutagutableu557_525 tptp.c_unsorted)) (tptp.instanceof (tptp.c_sort (tptp.tag_table tptp.void_P) A__questionmark_voiduPutagutableu557_525) (tptp.c_sort (tptp.pointer tptp.void_P) A__questionmark_xu558_524) (tptp.c_sort (tptp.tag_id tptp.void_P) tptp.void_P_tag))))
 (assert (not (=> (= tptp.c_Boolean_true tptp.c_Boolean_true) (forall ((A__questionmark_return tptp.c_unsorted)) (exists ((A__questionmark_v_0_288 tptp.c_sorted)) (and (= A__questionmark_v_0_288 (tptp.c_sort tptp.int32 A__questionmark_return)) (=> (= A__questionmark_v_0_288 (tptp.c_sort tptp.int32 tptp.x)) (= (tptp.integer_of_int32 A__questionmark_v_0_288) 5))))))))
 (check-sat)
+(exit)

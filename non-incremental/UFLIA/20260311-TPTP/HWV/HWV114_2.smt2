@@ -2059,3 +2059,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((VarCurr tptp.state_type)) (= (tptp.v22 VarCurr) (tptp.v24 VarCurr))))
 (assert (forall ((VarCurr tptp.state_type)) (= (tptp.v9 VarCurr) (tptp.v11 VarCurr))))
 (check-sat)
+(exit)

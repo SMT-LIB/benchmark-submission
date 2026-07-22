@@ -244,3 +244,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((C tptp.context) (E tptp.expr)) (=> (= (tptp.eval_0 E) tptp.underflow) (= (tptp.eval_0 (tptp.recompose C E)) tptp.underflow))))
 (assert (not (forall ((C tptp.context) (N Int)) (=> (<= 0 N) (forall ((X Int) (X1 tptp.context)) (=> (= C (tptp.right X X1)) (=> (<= N X) (= (tptp.eval_0 (tptp.recompose X1 (tptp.cte (- X N)))) (tptp.eval_0 (tptp.recompose C (tptp.cte N)))))))))))
 (check-sat)
+(exit)

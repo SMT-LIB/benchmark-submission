@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((Q Int) (R Int)) (and (not (= R 0)) (= (to_real Q) (* (/ 41 20) (to_real R)))))))
 (check-sat)
+(exit)

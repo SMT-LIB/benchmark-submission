@@ -30,3 +30,4 @@ v9.2.1 realease of TPTP.
 (assert (< tptp.eps 1.0))
 (assert (not (< (* (+ (* (/ 1.0 3.0) (* (/ 1.0 (+ 3.0 tptp.c)) tptp.eps)) 1.0) tptp.n) (* tptp.k tptp.x))))
 (check-sat)
+(exit)

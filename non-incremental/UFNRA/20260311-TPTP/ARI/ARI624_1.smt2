@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.f (Real) Real)
 (assert (not (not (forall ((X Real) (Y Real)) (=> (> Y 0.0) (< (tptp.f X) (+ (+ (* (/ 1 2) (tptp.f (+ X (- Y)))) (* (/ 1 2) (tptp.f (+ X Y)))) (- 1.0))))))))
 (check-sat)
+(exit)

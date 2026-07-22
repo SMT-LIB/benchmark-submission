@@ -28,3 +28,4 @@ v9.2.1 realease of TPTP.
 (assert (< (+ 1.0 tptp.z) tptp.w))
 (assert (let ((_let_1 (+ tptp.u tptp.v))) (let ((_let_2 (+ (+ _let_1 tptp.w) 1.0))) (let ((_let_3 (+ _let_1 tptp.z))) (not (< (* (* _let_3 _let_3) _let_3) (* (* (* (* _let_2 _let_2) _let_2) _let_2) _let_2)))))))
 (check-sat)
+(exit)

@@ -79,3 +79,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X tptp.t1) (Y tptp.t1) (N Int)) (=> (<= 0 N) (= (tptp.power1 (tptp.mult1 X Y) N) (tptp.mult1 (tptp.power1 X N) (tptp.power1 Y N))))))
 (assert (not (forall ((N Int)) (=> (<= 0 N) (=> (= N 0) (= (tptp.power1 (tptp.mk_t1 1 1 1 0) N) (tptp.mk_t1 (+ 1 0) 0 0 1)))))))
 (check-sat)
+(exit)

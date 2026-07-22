@@ -75,3 +75,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((Z tptp.graph1) (Z1 Int) (Z2 Int)) (=> (tptp.path1 Z Z1 Z2) (or (exists ((G tptp.graph1) (X Int)) (and (= Z G) (= Z1 X) (= Z2 X))) (exists ((G tptp.graph1) (X Int) (Y Int)) (and (tptp.path1 G X Y) (= Z G) (= Z1 Y) (= Z2 X))) (exists ((G tptp.graph1) (X Int) (Y Int) (Z3 Int)) (and (tptp.path1 G X Y) (tptp.path1 G Y Z3) (= Z G) (= Z1 X) (= Z2 Z3)))))))
 (assert (not (forall ((N Int) (X Int) (Y Int)) (=> (<= 0 N) (=> (and (<= 0 X) (< X N)) (=> (and (<= 0 Y) (< Y N)) (< (+ (* X N) Y) (* N N))))))))
 (check-sat)
+(exit)

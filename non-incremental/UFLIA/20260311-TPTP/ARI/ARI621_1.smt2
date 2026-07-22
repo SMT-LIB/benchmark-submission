@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.pow2 (Int) Bool)
 (assert (not (=> (forall ((X Int)) (= (tptp.pow2 X) (or (= X 1) (and (<= 2 X) (exists ((Y Int)) (and (= (* 2 Y) X) (tptp.pow2 Y))))))) (not (tptp.pow2 12)))))
 (check-sat)
+(exit)

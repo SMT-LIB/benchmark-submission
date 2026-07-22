@@ -102,3 +102,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A1 tptp.array_char) (A2 tptp.array_char) (I1 Int) (I2 Int) (I Int) (N Int)) (=> (< 0 N) (=> (and (<= 0 I) (< I N)) (=> (not (= (tptp.tb2t2 (tptp.get2 tptp.char (tptp.t2tb1 A1) (+ I1 I))) (tptp.tb2t2 (tptp.get2 tptp.char (tptp.t2tb1 A2) (+ I2 I))))) (not (tptp.matches1 A1 I1 A2 I2 N)))))))
 (assert (not (forall ((A1 tptp.array_char) (A2 tptp.array_char) (I1 Int) (I2 Int) (N Int) (Nqt Int)) (=> (tptp.matches1 A1 I1 A2 I2 N) (=> (< Nqt N) (tptp.matches1 A1 I1 A2 I2 Nqt))))))
 (check-sat)
+(exit)

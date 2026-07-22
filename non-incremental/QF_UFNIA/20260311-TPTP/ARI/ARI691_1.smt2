@@ -24,3 +24,4 @@ v9.2.1 realease of TPTP.
 (assert (let ((_let_1 (* tptp.a tptp.b))) (= _let_1 (tptp.f _let_1))))
 (assert (not (= (tptp.f (tptp.f (* tptp.a tptp.b))) (* tptp.b tptp.a))))
 (check-sat)
+(exit)

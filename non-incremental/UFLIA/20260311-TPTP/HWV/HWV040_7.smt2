@@ -1220,3 +1220,4 @@ v9.2.1 realease of TPTP.
 (assert (not (tptp.v1 tptp.constB199)))
 (assert (tptp.v1 tptp.constB200))
 (check-sat)
+(exit)

@@ -1026,3 +1026,4 @@ v9.2.1 realease of TPTP.
 (assert (exists ((X_3407 Int)) (tptp.mem2 tptp.g_s500_484 X_3407 tptp.g_s488_475)))
 (assert (not (and (forall ((X_3408 Int) (X_3409 Int)) (=> (tptp.mem2 X_3409 X_3408 tptp.g_s488_475) (and (exists ((X_3410 Int)) (tptp.mem2 X_3409 X_3410 tptp.g_s488_475)) (exists ((X_3411 Int)) (tptp.mem2 X_3411 X_3408 tptp.g_s488_475))))) (forall ((X_3412 Int) (X_3413 Int) (X_3414 Int)) (=> (and (tptp.mem2 X_3412 X_3413 tptp.g_s488_475) (tptp.mem2 X_3412 X_3414 tptp.g_s488_475)) (= X_3413 X_3414))))))
 (check-sat)
+(exit)

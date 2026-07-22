@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Real)) (not (= (to_real (to_int (+ X (/ 3 10)))) (+ (to_int X) (/ 3 10)))))))
 (check-sat)
+(exit)

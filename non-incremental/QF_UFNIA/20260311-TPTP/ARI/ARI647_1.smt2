@@ -21,3 +21,4 @@ v9.2.1 realease of TPTP.
 (declare-fun tptp.a () Int)
 (assert (not (or (not (<= (- 1) (* (- 1) (* 2 tptp.a)))) (not (= (* 3 tptp.a) 3)))))
 (check-sat)
+(exit)

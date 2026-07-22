@@ -29,3 +29,4 @@ v9.2.1 realease of TPTP.
 (assert (let ((_let_1 (* (- 1.0) tptp.a))) (>= tptp.m (* (/ 1.0 (+ _let_1 tptp.x)) (+ _let_1 tptp.b)))))
 (assert (not (< (tptp.f (to_real (- (to_int (- tptp.m))))) tptp.x)))
 (check-sat)
+(exit)

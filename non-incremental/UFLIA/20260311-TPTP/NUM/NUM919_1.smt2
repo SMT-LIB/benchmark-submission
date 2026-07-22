@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (forall ((U Int)) (exists ((V Int)) (and (< V U) (not (exists ((W Int)) (and (< V W) (< W U)))))))))
 (check-sat)
+(exit)

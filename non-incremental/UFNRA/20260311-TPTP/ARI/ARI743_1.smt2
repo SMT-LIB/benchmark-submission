@@ -29,3 +29,4 @@ v9.2.1 realease of TPTP.
 (assert (= (tptp.sqrt 0.0) 0.0))
 (assert (not (= (tptp.sqrt 1.0) 1.0)))
 (check-sat)
+(exit)

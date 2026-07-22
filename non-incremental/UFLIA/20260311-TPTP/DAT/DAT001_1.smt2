@@ -27,3 +27,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Int) (Y Int) (R tptp.list)) (let ((_let_1 (tptp.mycons Y R))) (=> (and (< X Y) (tptp.sorted _let_1)) (tptp.sorted (tptp.mycons X _let_1))))))
 (assert (not (tptp.sorted (tptp.mycons 1 (tptp.mycons 2 (tptp.mycons 4 (tptp.mycons 7 (tptp.mycons 100 tptp.nil))))))))
 (check-sat)
+(exit)

@@ -33,3 +33,4 @@ v9.2.1 realease of TPTP.
 (assert (not (= (tptp.f3 tptp.f4 (- tptp.f5 tptp.f6)) 0.0)))
 (assert (forall ((A__questionmark_v0 Real)) (exists ((A__questionmark_v_0_1 Real)) (and (= A__questionmark_v_0_1 0.0) (=> (< A__questionmark_v_0_1 A__questionmark_v0) (=> (< A__questionmark_v0 tptp.f6) (< A__questionmark_v_0_1 (tptp.f3 tptp.f4 A__questionmark_v0))))))))
 (check-sat)
+(exit)

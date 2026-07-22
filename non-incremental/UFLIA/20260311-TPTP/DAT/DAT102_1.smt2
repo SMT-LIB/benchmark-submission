@@ -31,3 +31,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((N Int) (L tptp.list)) (= (tptp.inRange N L) (or (= L tptp.nil) (exists ((K Int) (T tptp.list)) (and (= L (tptp.cons K T)) (<= 0 K) (< K N) (tptp.inRange N T)))))))
 (assert (not (not (forall ((L tptp.list) (N Int)) (=> (tptp.inRange N (tptp.tail L)) (tptp.inRange N L))))))
 (check-sat)
+(exit)

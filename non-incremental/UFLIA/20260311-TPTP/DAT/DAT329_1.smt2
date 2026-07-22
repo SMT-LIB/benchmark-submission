@@ -32,3 +32,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((A |tptp.'Array[Int,Int]'|) (B |tptp.'Array[Int,Int]'|)) (=> (forall ((I Int)) (= (|tptp.'select:(Array[Int,Int]*Int)>Int'| A I) (|tptp.'select:(Array[Int,Int]*Int)>Int'| B I))) (= A B))))
 (assert (forall ((I Int) (E Int)) (= (|tptp.'select:(Array[Int,Int]*Int)>Int'| (|tptp.'const:(Int)>Array[Int,Int]'| E) I) E)))
 (check-sat)
+(exit)

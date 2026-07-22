@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (exists ((X Real)) (= (* X (/ (- 2) 25)) (/ 57 50)))))
 (check-sat)
+(exit)

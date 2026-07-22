@@ -23,3 +23,4 @@ v9.2.1 realease of TPTP.
 (assert (= (+ (* tptp.d tptp.d) tptp.c) (* (* 2 tptp.d) tptp.d)))
 (assert (not (= (* (* tptp.c tptp.d) tptp.d) (* tptp.c tptp.c))))
 (check-sat)
+(exit)

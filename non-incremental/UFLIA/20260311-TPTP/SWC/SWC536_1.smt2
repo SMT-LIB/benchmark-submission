@@ -668,3 +668,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X_2319 tptp.set_2)) (=> (tptp.mem5 tptp.g_s285_289 X_2319 tptp.g_s274_1_283) (tptp.mem2 tptp.g_s289_293 tptp.g_s295_2_296 X_2319))))
 (assert (not (and (forall ((X_2321 tptp.set_2) (X_2322 Int)) (=> (tptp.mem5 X_2322 X_2321 tptp.g_s274_270) (and (exists ((X_2323 tptp.set_2)) (tptp.mem5 X_2322 X_2323 tptp.g_s274_270)) (exists ((X_2324 Int)) (tptp.mem5 X_2324 X_2321 tptp.g_s274_270))))) (forall ((X_2325 Int) (X_2326 tptp.set_2) (X_2327 tptp.set_2)) (=> (and (tptp.mem5 X_2325 X_2326 tptp.g_s274_270) (tptp.mem5 X_2325 X_2327 tptp.g_s274_270)) (forall ((X_2328 Int) (X_2329 Int)) (= (tptp.mem2 X_2329 X_2328 X_2326) (tptp.mem2 X_2329 X_2328 X_2327))))))))
 (check-sat)
+(exit)

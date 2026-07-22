@@ -51,3 +51,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((N_i Int) (D_i Int) (Q_i Int) (R_i Int)) (let ((_let_1 (tptp.f__integer__ Q_i))) (let ((_let_2 (tptp.f__integer__ D_i))) (=> (and (tptp.div (tptp.f__integer__ N_i) _let_2 _let_1 (tptp.f__integer__ R_i)) (< R_i (- D_i 1))) (tptp.div (tptp.f__integer__ (+ N_i 1)) _let_2 _let_1 (tptp.f__integer__ (+ R_i 1))))))))
 (assert (not (forall ((N_i Int) (D_i Int) (Q_i Int)) (let ((_let_1 (tptp.f__integer__ D_i))) (=> (tptp.div (tptp.f__integer__ N_i) _let_1 (tptp.f__integer__ Q_i) (tptp.f__integer__ (- D_i 1))) (tptp.div (tptp.f__integer__ (+ N_i 1)) _let_1 (tptp.f__integer__ (+ Q_i 1)) (tptp.f__integer__ 0)))))))
 (check-sat)
+(exit)

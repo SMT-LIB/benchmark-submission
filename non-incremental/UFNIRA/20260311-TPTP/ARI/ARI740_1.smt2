@@ -29,3 +29,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((X Real) (N Int)) (=> (and (<= 0 N) (<= 1.0 X)) (<= 1.0 (tptp.power X N)))))
 (assert (not (= (tptp.power 2.0 2) 4.0)))
 (check-sat)
+(exit)

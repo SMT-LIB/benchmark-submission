@@ -20,3 +20,4 @@ v9.2.1 realease of TPTP.
 (declare-sort $$unsorted 0)
 (assert (not (< (to_int (- 10.0 (/ 1 10000))) (* (to_int (/ 11 2)) 2))))
 (check-sat)
+(exit)

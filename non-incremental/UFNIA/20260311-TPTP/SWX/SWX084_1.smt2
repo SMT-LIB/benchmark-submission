@@ -53,3 +53,4 @@ v9.2.1 realease of TPTP.
 (assert (forall ((D_i Int) (N_i Int)) (=> (>= N_i 0) (=> (> D_i 0) (exists ((Q_i Int) (R_i Int)) (tptp.div (tptp.f__integer__ N_i) (tptp.f__integer__ D_i) (tptp.f__integer__ Q_i) (tptp.f__integer__ R_i)))))))
 (assert (not (forall ((N_i Int) (D_i Int)) (=> (and (>= N_i 0) (> D_i 0)) (exists ((Q_i Int) (R_i Int)) (tptp.div (tptp.f__integer__ N_i) (tptp.f__integer__ D_i) (tptp.f__integer__ Q_i) (tptp.f__integer__ R_i)))))))
 (check-sat)
+(exit)
