@@ -15,7 +15,7 @@ selection of benchmarks to SMT-LIB.  They were exported from the
 v9.2.1 realease of TPTP.
 |)
 (set-info :category "industrial")
-(set-info :status "unknown")
+(set-info :status unknown)
 ; SZS status Success
 (declare-sort $$unsorted 0)
 (assert (not (forall ((X Int) (Y Int)) (exists ((Z Int)) (and (< X Z) (< Z (+ X 5)) (not (and (< Y Z) (< Z (+ Y 3)))))))))

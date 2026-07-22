@@ -15,7 +15,7 @@ selection of benchmarks to SMT-LIB.  They were exported from the
 v9.2.1 realease of TPTP.
 |)
 (set-info :category "industrial")
-(set-info :status "unknown")
+(set-info :status unknown)
 ; SZS status Success
 (declare-sort $$unsorted 0)
 (declare-sort |tptp.'A_b_c_prod_prod_ell2_a_b_c_prod_prod_ell2_cblinfun_a_b_c_prod_prod_ell2_a_b_c_prod_prod_ell2_cblinfun_fun$'| 0)

@@ -15,7 +15,7 @@ selection of benchmarks to SMT-LIB.  They were exported from the
 v9.2.1 realease of TPTP.
 |)
 (set-info :category "industrial")
-(set-info :status "unknown")
+(set-info :status unknown)
 ; SZS status Success
 (declare-sort $$unsorted 0)
 (declare-sort |tptp.'A_element_ptr_b_character_data_ptr_c_sum_sum_node_ptr_d_document_ptr_e_shadow_root_ptr_f_sum_sum_sum_object_ptr_fset_a_element_ptr_b_character_data_ptr_c_sum_sum_node_ptr_d_document_ptr_e_shadow_root_ptr_f_sum_sum_sum_object_ptr_fset_bool_fun_fun$'| 0)

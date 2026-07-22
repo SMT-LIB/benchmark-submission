@@ -15,7 +15,7 @@ selection of benchmarks to SMT-LIB.  They were exported from the
 v9.2.1 realease of TPTP.
 |)
 (set-info :category "industrial")
-(set-info :status "unknown")
+(set-info :status unknown)
 ; SZS status Success
 (declare-fun tptp.f (Int) Int)
 (assert (not (=> (forall ((U Int)) (> (tptp.f U) 1)) (< (- 7 (* 2 (tptp.f 3))) 4))))
