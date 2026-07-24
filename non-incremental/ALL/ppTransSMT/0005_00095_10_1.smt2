@@ -1,5 +1,5 @@
 (set-info :smt-lib-version 2.6)
-(set-logic ALL)
+(set-logic UFNIA)
 (set-info :source |
 Generated on: 2026-06-22
 Generator: ppTransSmt github.com/CLEARSY/pptranspog
