@@ -1,5 +1,5 @@
 (set-info :smt-lib-version 2.7)
-(set-logic ALL)
+(set-logic HO_UFDTNIRA)
 (set-info :source |
 Generated on: 2026-06-22
 Generator: pog2smtlib-2.7 github.com/CLEARSY/pog2smtlib-2.7 (-l HO_ALL -rpX)
